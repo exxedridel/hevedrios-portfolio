@@ -8,6 +8,12 @@
   --clr-light: 231 77% 90%;
   --clr-white: 0 0% 100%;
 
+  /* pastel sunset */
+  /* --clr-purple: 287 16.5% 27.3%;
+  --clr-magenta: 327 28.0% 36.5%;
+  --clr-crimson: 345 38.9% 50.6%;
+  --clr-gold: 27 69.6% 69.0%; */
+
   /* font-sizes */
   --fs-900: 9.375rem;
   --fs-800: 6.25rem;
@@ -209,4 +215,17 @@ select {
 .fs-700,
 .fs-600 {
   line-height: 1.1;
+}
+
+.numbered-title {
+  font-family: var(--ff-sans-cond);
+  font-size: var(--fs-500);
+  text-transform: uppercase;
+  letter-spacing: 4.72px;
+}
+
+.numbered-title span {
+  margin-right: 0.5em;
+  font-weight: 700;
+  color: hsl(var(--clr-white) / 0.25);
 }
