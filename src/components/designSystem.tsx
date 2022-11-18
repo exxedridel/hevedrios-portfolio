@@ -7,7 +7,7 @@ const designSystem = () => {
 
       <section id="colors" style={{ margin: "4rem 0" }}>
         <h2 className="numbered-title"><span>01</span>colors</h2>
-        <div className="flex">
+        <div className="flex" style={{ marginTop: "4rem" }}>
           <div style={{ flexGrow: "1" }}>
             <div className="bg-dark text-white ff-serif fs-500" style={{ padding: "3rem 1rem 1rem", border: "1px solid white" }}>#0B0D17</div>
             <p><span className="text-accent">RGB</span> 11, 13, 23</p>
@@ -27,9 +27,9 @@ const designSystem = () => {
       </section>
 
       <section id="typography" style={{ margin: "4rem 0" }}>
-        <h2 className="numbered-title"><span>02</span>Typography</h2>
+        <h2 className="numbered-title" style={{ margin: "4rem 0" }}><span>02</span>Typography</h2>
         <div className="flex">
-          <div style={{ flexBasis: "100%" }}>
+          <div className="flow" style={{ flexBasis: "100%" }}>
             <div>
               <p className="text-accent">Heading 1 - Bellefair Regular - 150px</p>
               <p className="fs-900 ff-serif uppercase">Earth</p>
@@ -53,7 +53,7 @@ const designSystem = () => {
 
           </div>
 
-          <div style={{ flexBasis: "100%" }}>
+          <div className="flow" style={{ flexBasis: "100%" }}>
             <div>
               <p className="text-accent">Subheading 1 - Bellefair Regular - 28px</p>
               <p className="fs-500 ff-serif uppercase">384,400 km</p>
@@ -72,6 +72,50 @@ const designSystem = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="flow" id="interactive-elements">
+        <h2 className="numbered-title"><span>03</span> Interactive elements</h2>
+
+        {/* navigation */}
+        <div>
+          <nav>
+            <ul className="primary-navigation underline-indicators flex">
+              <li className="active"><a className="uppercase text-white letter-spacing-2" href="#"><span>01</span>Active</a></li>
+              <li><a className="uppercase text-white letter-spacing-2" href="#"><span>02</span>Hovered</a></li>
+              <li><a className="uppercase text-white letter-spacing-2" href="#"><span>03</span>Idle</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div className="flex">
+          <div style={{ marginTop: "5rem" }}>
+            {/* explore button */}
+            <a href="#" className="large-button uppercase ff-serif fs-600 text-dark bg-white">Explore</a>
+
+          </div>
+
+          <div className="flow" style={{ marginBottom: "50vh" }}>
+            {/* Tabs */}
+            <div className="tab-list underline-indicators flex">
+              {/* aria - accesible internet rich aplications */}
+              <button aria-selected="true" className="uppercase ff-sans-cond text-accent bg-dark fs letter-spacing-2">Moon</button>
+              <button aria-selected="false" className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Mars</button>
+              <button aria-selected="false" className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Europa</button>
+            </div>
+
+            {/* Dots */}
+            <div className="dot-indicators flex">
+              {/* aria - accesible internet rich aplications */}
+              <button aria-selected="true"><span className="sr-only">Slide title</span></button>
+              <button aria-selected="false"><span className="sr-only">Slide title</span></button>
+              <button aria-selected="false"><span className="sr-only">Slide title</span></button>
+            </div>
+
+            {/* Numbers  */}
+          </div>
+        </div>
+
       </section>
 
     </div>
