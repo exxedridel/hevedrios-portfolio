@@ -3,9 +3,9 @@
 const designSystem = () => {
   return (
     <div className="container">
-      <h1 className="uppercase">Design system</h1>
+      <h1 className="uppercase" style={{ marginTop: "4rem" }}>Design system</h1>
 
-      <section id="colors" style={{ margin: "4rem 0" }}>
+      <section id="colors" style={{ margin: "8rem 0 8rem" }}>
         <h2 className="numbered-title"><span>01</span>colors</h2>
         <div className="flex" style={{ marginTop: "4rem" }}>
           <div style={{ flexGrow: "1" }}>
@@ -26,7 +26,7 @@ const designSystem = () => {
         </div>
       </section>
 
-      <section id="typography" style={{ margin: "4rem 0" }}>
+      <section id="typography" style={{ margin: "4rem 0 8rem" }}>
         <h2 className="numbered-title" style={{ margin: "4rem 0" }}><span>02</span>Typography</h2>
         <div className="flex">
           <div className="flow" style={{ flexBasis: "100%" }}>
@@ -74,28 +74,29 @@ const designSystem = () => {
         </div>
       </section>
 
-      <section className="flow" id="interactive-elements">
+      <section className="flow" id="interactive-elements" style={{ marginBottom: "20vh"}}>
         <h2 className="numbered-title"><span>03</span> Interactive elements</h2>
 
         {/* navigation */}
-        <div>
+        <div className="center-item">
           <nav>
             <ul className="primary-navigation underline-indicators flex">
               <li className="active"><a className="uppercase text-white letter-spacing-2" href="#"><span>01</span>Active</a></li>
-              <li><a className="uppercase text-white letter-spacing-2" href="#"><span>02</span>Hovered</a></li>
-              <li><a className="uppercase text-white letter-spacing-2" href="#"><span>03</span>Idle</a></li>
+              <li><a className="uppercase text-white letter-spacing-2" href="/"><span>02</span>Hovered</a></li>
+              <li><a className="uppercase text-white letter-spacing-2" href="/"><span>03</span>Idle</a></li>
             </ul>
           </nav>
         </div>
 
-        <div className="flex">
+        <div className="flex" style={{justifyContent: "space-around"}}>
           <div style={{ marginTop: "5rem" }}>
             {/* explore button */}
-            <a href="#" className="large-button uppercase ff-serif fs-600 text-dark bg-white">Explore</a>
+            <a href="/" className="large-button uppercase ff-serif fs-600 text-dark bg-white">Explore</a>
 
           </div>
 
-          <div className="flow" style={{ marginBottom: "50vh" }}>
+          <div className="flow" style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+
             {/* Tabs */}
             <div className="tab-list underline-indicators flex">
               {/* aria - accesible internet rich aplications */}
@@ -113,6 +114,12 @@ const designSystem = () => {
             </div>
 
             {/* Numbers  */}
+            <div className="number-buttons flow">
+              <a href="/" aria-selected="true">1</a>
+              <a href="/" aria-selected="false">2</a>
+              <a href="/" aria-selected="false">3</a>
+            </div>
+
           </div>
         </div>
 
