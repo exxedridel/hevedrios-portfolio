@@ -81,7 +81,7 @@ const designSystem = () => {
         <div className="center-item">
           <nav>
             <ul className="primary-navigation underline-indicators flex">
-              <li className="active"><a className="uppercase text-white letter-spacing-2" href="#"><span>01</span>Active</a></li>
+              <li className="active"><a className="uppercase text-white letter-spacing-2" href="/"><span>01</span>Active</a></li>
               <li><a className="uppercase text-white letter-spacing-2" href="/"><span>02</span>Hovered</a></li>
               <li><a className="uppercase text-white letter-spacing-2" href="/"><span>03</span>Idle</a></li>
             </ul>
@@ -100,24 +100,24 @@ const designSystem = () => {
             {/* Tabs */}
             <div className="tab-list underline-indicators flex">
               {/* aria - accesible internet rich aplications */}
-              <button aria-selected="true" className="uppercase ff-sans-cond text-accent bg-dark fs letter-spacing-2">Moon</button>
-              <button aria-selected="false" className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Mars</button>
-              <button aria-selected="false" className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Europa</button>
+              <button className="active uppercase ff-sans-cond text-accent bg-dark fs letter-spacing-2">Moon</button>
+              <button className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Mars</button>
+              <button className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Europa</button>
             </div>
 
             {/* Dots */}
             <div className="dot-indicators flex">
               {/* aria - accesible internet rich aplications */}
-              <button aria-selected="true"><span className="sr-only">Slide title</span></button>
-              <button aria-selected="false"><span className="sr-only">Slide title</span></button>
-              <button aria-selected="false"><span className="sr-only">Slide title</span></button>
+              <button ><span className="active sr-only">Slide title</span></button>
+              <button ><span className="sr-only">Slide title</span></button>
+              <button ><span className="sr-only">Slide title</span></button>
             </div>
 
             {/* Numbers  */}
             <div className="number-buttons flow">
-              <a href="/" aria-selected="true">1</a>
-              <a href="/" aria-selected="false">2</a>
-              <a href="/" aria-selected="false">3</a>
+              <a href="/" className="active">1</a>
+              <a href="/" >2</a>
+              <a href="/" >3</a>
             </div>
 
           </div>
