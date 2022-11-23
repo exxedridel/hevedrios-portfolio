@@ -1,11 +1,13 @@
-import "./App.css"
-import DesignSystem from "./components/DesignSystem";
+// import DesignSystem from "./components/DesignSystem";
+import { GlobalStyles } from "./GlobalStyles.style"
+import Home from "./pages/Home"
 
 function App() {
   return (
-    <div className="App">
-      <DesignSystem/>
-    </div>
+    <>
+      <GlobalStyles />
+      <Home />
+    </>
   );
 }
 

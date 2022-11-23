@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyles = createGlobalStyle`
 /* ------------------- */
 /* Custom properties   */
 /* ------------------- */
@@ -78,7 +81,7 @@ body {
   color: hsl(var(--clr-white));
   background-color: hsl(var(--clr-dark));
   line-height: 1.5;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 /* make images easier to work with */
@@ -370,3 +373,4 @@ select {
   background-color: hsl(var(--clr-white) / 1);
   border: none;
 }
+`

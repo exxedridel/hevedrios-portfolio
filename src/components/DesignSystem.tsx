@@ -1,5 +1,3 @@
-
-
 const designSystem = () => {
   return (
     <div className="container">
