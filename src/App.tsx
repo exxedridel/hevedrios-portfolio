@@ -1,5 +1,5 @@
 import "./App.css"
-import DesignSystem from "./components/designSystem";
+import DesignSystem from "./components/DesignSystem";
 
 function App() {
   return (
