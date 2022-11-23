@@ -108,7 +108,7 @@ const designSystem = () => {
             {/* Dots */}
             <div className="dot-indicators flex">
               {/* aria - accesible internet rich aplications */}
-              <button ><span className="active sr-only">Slide title</span></button>
+              <button className="active"><span className="sr-only">Slide title</span></button>
               <button ><span className="sr-only">Slide title</span></button>
               <button ><span className="sr-only">Slide title</span></button>
             </div>
