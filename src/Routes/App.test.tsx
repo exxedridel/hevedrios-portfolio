@@ -4,6 +4,6 @@ import App from './App';
 
 test('renders App component', () => {
   render(<App />);
-  const divElement = screen.getByText(/design system/i);
+  const divElement = screen.getByText(/heved/i);
   expect(divElement).toBeInTheDocument();
 });

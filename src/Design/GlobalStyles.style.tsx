@@ -288,9 +288,9 @@ select {
   --gap: 8rem;
   --underline-gap: 2rem;
   list-style: none;
-  padding: 0 4em;
+  padding: 0;
   margin: 0;
-  background-color: hsl(var(--clr-white) / 0.04);
+  
 }
 
 .primary-navigation a {
