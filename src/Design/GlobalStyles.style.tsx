@@ -7,14 +7,14 @@ export const GlobalStyles = createGlobalStyle`
 
 :root {
   /* custom colors */
-  --clr-dark: 287 20.5% 13.3%;
+  /* --clr-dark: 287 20.5% 13.3%;
   --clr-light: 365 68.9% 90%;
-  --clr-white: 0 0% 93%;
+  --clr-white: 0 0% 100%; */
 
   /* original colors */
-  /* --clr-dark: 230 35% 7%;
+  --clr-dark: 230 35% 7%;
   --clr-light: 231 77% 90%;
-  --clr-white: 0 0% 100%; */
+  --clr-white: 0 0% 100%;
 
   /* pastel sunset pallet */
   /* --clr-purple: 287 16.5% 27.3%;
@@ -257,7 +257,7 @@ select {
 
 .large-button {
   position: relative;
-  display: grid;
+  display: inline-grid;
   z-index: 1;
   place-items: center; /* shorthand for justify and align items */
   padding: 0 2em;

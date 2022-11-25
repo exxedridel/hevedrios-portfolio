@@ -2,9 +2,9 @@ import H_logo from "../Assets/Shared/H-logo-72.png"
 
 const Header = () => {
    return (
-      <header>
+      <header className="primary-header flex">
          <div>
-            <img src={H_logo} alt="Heved logo" className="logo" />
+            <img src={H_logo} alt="Heved logo" className="logo"/>
          </div>
          <nav >
             <ul className="primary-navigation underline-indicators flex">
