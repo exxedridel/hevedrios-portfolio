@@ -1,8 +1,10 @@
+import { HeaderStyled } from "../Styles/Header.style"
 import H_logo from "../Assets/Shared/H-logo-72.png"
 
 const Header = () => {
    return (
-      <header className="primary-header flex">
+      // it also had "primary-header" class for future reference, but that can be placed now in Header.style.js
+      <HeaderStyled className="flex">
          <div>
             <img src={H_logo} alt="Heved logo" className="logo"/>
          </div>
@@ -14,7 +16,7 @@ const Header = () => {
                <li><a className="uppercase ff-sans-cond text-white letter-spacing-2" href="/"><span>03</span>About</a></li>
             </ul>
          </nav>
-      </header>
+      </HeaderStyled>
    )
 }
 
