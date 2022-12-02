@@ -1,13 +1,12 @@
 import { HeaderStyled, Nav, Logo } from "../Styles/Header.style"
-import logo from "../Assets/Shared/H-logo-72.png"
+import logo from "../Assets/Shared/logoHeved.svg"
 
 const Header = () => {
    return (
       // it also had "primary-header" class for future reference, but that can be placed now in Header.style.js
       <HeaderStyled className="flex">
          <div>
-            {/* <img src={H_logo} alt="Heved logo" className="logo"/> */}
-            <Logo src={logo} alt="logo"/>
+            <Logo src={logo} alt="H logo"/>
          </div>
          <Nav >
             <ul className="primary-navigation underline-indicators flex">
