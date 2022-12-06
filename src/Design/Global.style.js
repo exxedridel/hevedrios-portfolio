@@ -81,7 +81,11 @@ body {
   color: hsl(var(--clr-white));
   background-color: hsl(var(--clr-dark));
   line-height: 1.5;
-  min-height: 50vh;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
+
 }
 
 /* make images easier to work with */
@@ -135,11 +139,11 @@ select {
 /* The difference between :is and :where = :is gonna take the higher on specificity and apply it to the rule */
 /* :where in the other hand dosent add any specificity */
 
-.container {
+/* .container {
   padding-inline: 2em;
   margin-inline: auto;
   max-width: 80rem;
-}
+} new class containers are in the styled component including body*/ 
 
 .center-item {
   display: flex;
@@ -257,8 +261,8 @@ select {
 
 .large-button {
   position: relative;
-  display: inline-grid;
   z-index: 1;
+  display: inline-grid;
   place-items: center; /* shorthand for justify and align items */
   padding: 0 2em;
   border-radius: 50%;
@@ -267,13 +271,13 @@ select {
 }
 
 .large-button::after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   width: 100%; /* optional approach to aspect-ratio */
   height: 100%;
-  background: hsl(var(--clr-white) / 0.15);
-  border-radius: inherit; /* instead of rewriting 50% */
+  background: hsl(var(--clr-white) / 0.1);
+  border-radius: 50%; /* or :inherit */
   opacity: 0;
   transition: opacity 500ms linear, transform 750ms ease-in-out;
 }
@@ -290,7 +294,6 @@ select {
   list-style: none;
   padding: 0;
   margin: 0;
-  
 }
 
 .primary-navigation a {

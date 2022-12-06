@@ -13,6 +13,7 @@ function App() {
     <>
       <GlobalStyles />
       <HashRouter>
+        {/* <body> */}
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -20,9 +21,10 @@ function App() {
           <Route path="services" element={<Services />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<NotFound />} />
+          {/* <DesignSystem /> */}
         </Routes>
+        {/* </body> */}
       </HashRouter>
-      {/* <DesignSystem /> */}
     </>
   );
 }

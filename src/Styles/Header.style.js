@@ -4,4 +4,6 @@ export const HeaderStyled = styled.header``
 
 export const Nav = styled.nav``
 
-export const Logo = styled.img``
+export const Logo = styled.img`
+   width: 64px
+`
