@@ -10,7 +10,7 @@ export const GridContainer = styled.div`
   border: 5px solid limegreen;
   display: grid;
 
-  @media (min-width: 45rem) {
+  @media (min-width: 45em) {
     & {
       column-gap: var(--container-gap, 2rem);
       grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(2rem, 1fr);
