@@ -1,4 +1,4 @@
-import { HeaderStyled, Logo } from "../Styles/Header.style"
+import { HeaderStyled, Logo } from "../Styles/Header.styles"
 import logo from "../Assets/Shared/logoHeved.svg"
 
 const Header = () => {

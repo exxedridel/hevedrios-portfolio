@@ -1,4 +1,13 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
+
+export const BodyContainer = styled.div`
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+
+  // bg-images settings
+  
+`;
 
 export const GlobalStyles = createGlobalStyle`
 /* ------------------- */
@@ -93,19 +102,21 @@ p {
   font-weight: 400;
 }
 
-/* set up the body */
+/* set up the body (only format properties), because react wont display the div correctly */
 body {
+  background-color: hsl(var(--clr-dark));
   font-family: var(--ff-sans-normal);
   font-size: var(--fs-400);
   color: hsl(var(--clr-white));
   background-color: hsl(var(--clr-dark));
   line-height: 1.5;
+}
+// these display properties are defined at the top of this file in his own styled component
+/* body {
   min-height: 100vh;
-
   display: grid;
   grid-template-rows: min-content 1fr;
-
-}
+} */
 
 /* make images easier to work with */
 img,
@@ -166,7 +177,7 @@ select {
   padding-inline: 2em;
   margin-inline: auto;
   max-width: 80rem;
-} new class containers are in the styled component including body*/ 
+} new className containers are in Container.style including body container*/ 
 
 .center-item {
   display: flex;
