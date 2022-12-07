@@ -20,8 +20,9 @@ function App() {
             <Route path="portfolio" element={<Portfolio />} />
             <Route path="services" element={<Services />} />
             <Route path="about" element={<About />} />
-            <Route path="design-system" element={<DesignSystem />} />
             <Route path="*" element={<NotFound />} />
+            // temporal route
+            <Route path="design-system" element={<DesignSystem />} />
           </Routes>
         </BodyContainer>
       </HashRouter>

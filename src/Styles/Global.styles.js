@@ -6,7 +6,6 @@ export const BodyContainer = styled.div`
   grid-template-rows: min-content 1fr;
 
   // bg-images settings
-  
 `;
 
 export const GlobalStyles = createGlobalStyle`
@@ -293,13 +292,13 @@ select {
 /* Components    */
 /* - - - - - - - */
 
-.large-button {
+/* .large-button {
   font-size: 2rem;
   position: relative;
   z-index: 1;
   display: inline-grid;
-  place-items: center; /* shorthand for justify and align items */
-  padding: 0 2em;
+  place-items: center; // shorthand for justify and align items 
+  padding: 0 1.5em;
   border-radius: 50%;
   aspect-ratio: 1;
   text-decoration: none;
@@ -309,10 +308,10 @@ select {
   content: '';
   position: absolute;
   z-index: -1;
-  width: 100%; /* optional approach to aspect-ratio */
+  width: 100%; // optional approach to aspect-ratio 
   height: 100%;
   background: hsl(var(--clr-white) / 0.1);
-  border-radius: 50%; /* or :inherit */
+  border-radius: 50%; // or :inherit
   opacity: 0;
   transition: opacity 500ms linear, transform 750ms ease-in-out;
 }
@@ -321,14 +320,31 @@ select {
 .large-button:focus::after {
   opacity: 1;
   transform: scale(1.5);
-}
+} */
 
-.primary-navigation {
-  --gap: 8rem;
+/* .primary-navigation {
   --underline-gap: 2rem;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 35rem) {
+  .primary-navigation {
+    --underline-gap: .5rem;
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+    background: black;
+    list-style: none;
+    padding: min(20rem, 15vh) 2rem;
+    margin: 0;
+    flex-direction: column;
+  }
+}
+
+.primary-navigation.underline-indicators > .active {
+  border: 0;
 }
 
 .primary-navigation a {
@@ -338,7 +354,7 @@ select {
 .primary-navigation a > span {
   font-weight: 700;
   margin-right: 0.5em;
-}
+} */
 
 .underline-indicators > * {
   padding: var(--underline-gap, 1rem) 0;

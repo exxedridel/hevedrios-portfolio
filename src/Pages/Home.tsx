@@ -1,4 +1,5 @@
 import { GridContainerHome } from "../Styles/Home.styles"
+import { ButtonLarge } from "../Styles/Button.styles"
 
 const Home = () => {
    return (
@@ -12,9 +13,9 @@ const Home = () => {
                deliver value to my products through the visuals and aesthetic, check out my current projects.
             </p>
          </div>
-         <div>
+         <ButtonLarge>
             <a href="/" className="large-button uppercase ff-serif text-dark bg-white">let's go!</a>
-         </div>
+         </ButtonLarge>
       </GridContainerHome>
    )
 }
