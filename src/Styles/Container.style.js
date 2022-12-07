@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const Container = styled.div`
   padding-inline: 2em;
   margin-inline: auto;
@@ -7,8 +9,14 @@ export const Container = styled.div`
 `;
 
 export const GridContainer = styled.div`
+  text-align: center;
   border: 5px solid limegreen;
   display: grid;
+  place-items: center;
+
+  & * {
+    max-width: 50ch;
+  }
 
   @media (min-width: 45em) {
     & {

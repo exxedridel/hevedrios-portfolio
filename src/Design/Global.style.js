@@ -150,6 +150,10 @@ select {
   gap: var(--gap, 1rem);
 }
 
+.d-block {
+  display: block;
+}
+
 /* .flow > * + * {  same as below without adding the extra especificity needed*/
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-space, 3rem); /* normally setted up to 1px */
@@ -279,6 +283,7 @@ select {
 /* - - - - - - - */
 
 .large-button {
+  font-size: 2rem;
   position: relative;
   z-index: 1;
   display: inline-grid;
