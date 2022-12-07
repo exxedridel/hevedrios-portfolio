@@ -21,7 +21,7 @@ function App() {
             <Route path="services" element={<Services />} />
             <Route path="about" element={<About />} />
             <Route path="*" element={<NotFound />} />
-            // temporal route
+            {/* temporal route */}
             <Route path="design-system" element={<DesignSystem />} />
           </Routes>
         </BodyContainer>
