@@ -1,7 +1,10 @@
 import styled from "styled-components";
-import iconHamburguer from "../Assets/Shared/icon-hamburger.svg"
 
 export const HeaderStyled = styled.header`
+  .mobile-nav-toggle {
+    display: none;
+  }
+
   @media (max-width: 35rem) {
     .mobile-nav-toggle {
       display: block;
@@ -10,11 +13,17 @@ export const HeaderStyled = styled.header`
       right: 1rem;
       top: 2rem;
       background: transparent;
-      background-image: url(${iconHamburguer});
+      // conditional background-image over component
       background-repeat: no-repeat;
+      background-position: center;
       width: 1.5rem;
       aspect-ratio: 1;
       border: 0;
+    }
+
+    .mobile-nav-toggle:focus-visible {
+      outline: 3px solid hsl(var(--clr-light));
+      outline-offset: 4px;
     }
   }
 `;
@@ -29,20 +38,16 @@ export const Nav = styled.nav`
     list-style: none;
     padding: 0;
     margin: 0;
-    // fallback in case browser dont supports
+    // fallback in case browser dont supports certain properties
     background: hsl(var(--clr-dark) / 0.95);
   }
 
-  // if browser supports, then:
+  // if browser supports this properties, then:
   @supports (backdrop-filter: blur(1rem)) {
     .primary-navigation {
       background: hsl(var(--clr-white) / 0.05);
       backdrop-filter: blur(1.5rem);
     }
-  }
-
-  .mobile-nav-toggle {
-    display: none;
   }
 
   @media (max-width: 35rem) {
@@ -55,7 +60,8 @@ export const Nav = styled.nav`
       padding: min(20rem, 15vh) 2rem;
       margin: 0;
       flex-direction: column;
-      transform: translateX(100%)
+      transform: translateX(100%);
+      transition: transform 500ms ease-in-out;
     }
   }
 
