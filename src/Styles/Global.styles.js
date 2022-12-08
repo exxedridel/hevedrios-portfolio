@@ -1,11 +1,31 @@
 import styled, { createGlobalStyle } from "styled-components";
+import bgHomeMobile from "../Assets/Home/background-home-mobile.jpg";
+import bgHomeTablet from "../Assets/Home/background-home-tablet.jpg";
+import bgHomeDesktop from "../Assets/Home/background-home-desktop.jpg";
 
 export const BodyContainer = styled.div`
   min-height: 100vh;
   display: grid;
   grid-template-rows: min-content 1fr;
+  overflow-x: hidden;
 
   // bg-images settings
+  background-size: cover;
+  background-position: bottom center;
+  background-image: url(${bgHomeMobile});
+
+  @media (min-width: 35rem) {
+    & {
+      background-position: center center;
+      background-image: url(${bgHomeTablet});
+    }
+  }
+
+  @media (min-width: 45rem) {
+    & {
+      background-image: url(${bgHomeDesktop});
+    }
+  }
 `;
 
 export const GlobalStyles = createGlobalStyle`
