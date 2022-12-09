@@ -25,7 +25,7 @@ const Header = () => {
          <div>
             <Logo src={logo} alt="Heved logo" />
          </div>
-         <button onClick={toggleClick} style={iconMenu} className="mobile-nav-toggle" aria-controls="primary-navigation"><span className="sr-only" aria-expanded={`${toggle}`}>Menu</span></button>
+         <button onClick={toggleClick} style={iconMenu} className="mobile-nav-toggle" aria-controls="primary-navigation"><span className="sr-only" aria-expanded={toggle}>Menu</span></button>
          <Nav >
             <ul style={translateX} id="primary-navigation" className="primary-navigation underline-indicators flex">
                <li><a className="uppercase ff-sans-cond text-white letter-spacing-2" href="/"><span>00</span>Home</a></li>
