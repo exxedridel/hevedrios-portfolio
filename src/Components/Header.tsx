@@ -1,4 +1,4 @@
-import { useState, useRef, ReactHTMLElement } from "react";
+import { useState } from "react";
 import { SkipToContent, Logo, HeaderStyled } from "../Styles/Header.styles"
 import logo from "../Assets/Shared/logo-Heved.svg"
 import iconHamburger from "../Assets/Shared/icon-hamburger.svg"
