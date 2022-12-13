@@ -1,4 +1,3 @@
-import DesignSystem from "../Design/DesignSystem";
 import { HashRouter, Routes, Route } from "react-router-dom"
 import { GlobalStyles, BodyContainer } from "../Styles/Global.styles"
 import Header from "../Components/Header"
@@ -21,8 +20,6 @@ function App() {
             <Route path="services" element={<Services />} />
             <Route path="about" element={<About />} />
             <Route path="*" element={<NotFound />} />
-            {/* temporal route */}
-            <Route path="design-system" element={<DesignSystem />} />
           </Routes>
         </BodyContainer>
       </HashRouter>

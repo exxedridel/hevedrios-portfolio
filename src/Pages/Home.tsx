@@ -3,7 +3,7 @@ import { ButtonLarge } from "../Styles/Button.styles"
 
 const Home = () => {
    return (
-      <GridContainerHome >
+      <GridContainerHome as="main">
          <div>
             <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">
                Nice to have you here, I'm <span className="d-block fs-900 ff-serif text-white">Heved</span>

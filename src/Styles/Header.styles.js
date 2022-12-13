@@ -1,33 +1,18 @@
 import styled from "styled-components";
 
-export const HeaderStyled = styled.header`
-  justify-content: space-between;
-  align-items: center;
+export const SkipToContent = styled.button`
+  position: absolute;
+  z-index: 9999;
+  background: hsl(var(--clr-white));
+  color: hsl(var(--clr-dark));
+  text-decoration: underline;
+  padding: 0.5em 1em;
+  margin-inline: auto;
+  transform: translateY(-100%);
+  transition: transform 250ms ease-in;
 
-  .mobile-nav-toggle {
-    display: none;
-  }
-
-  @media (max-width: 35rem) {
-    .mobile-nav-toggle {
-      display: block;
-      position: absolute;
-      z-index: 2000;
-      right: 1rem;
-      top: 2rem;
-      background: transparent;
-      // conditional background-image over component
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 1.5rem;
-      aspect-ratio: 1;
-      border: 0;
-    }
-
-    .mobile-nav-toggle:focus-visible {
-      outline: 3px solid hsl(var(--clr-light));
-      outline-offset: 4px;
-    }
+  &:focus {
+    transform: translateY(0);
   }
 `;
 
@@ -36,21 +21,18 @@ export const Logo = styled.img`
   width: 48px;
 `;
 
-export const Nav = styled.nav`
+export const HeaderStyled = styled.header`
+  justify-content: space-between;
+  align-items: center;
+
   .primary-navigation {
+    --gap: clamp(1.5rem, 5vw, 3.5rem);
     --underline-gap: 2rem;
     list-style: none;
     padding: 0;
     margin: 0;
-    // fallback in case browser dont supports certain properties
-    background: hsl(var(--clr-dark) / 0.95);
-  }
-  // if browser supports this properties, then:
-  @supports (backdrop-filter: blur(1rem)) {
-    .primary-navigation {
-      background: hsl(var(--clr-white) / 0.05);
-      backdrop-filter: blur(1.5rem);
-    }
+    background: hsl(var(--clr-white) / 0.05);
+    backdrop-filter: blur(1.5rem);
   }
 
   .primary-navigation a {
@@ -60,6 +42,10 @@ export const Nav = styled.nav`
   .primary-navigation a > span {
     font-weight: 700;
     margin-right: 0.5em;
+  }
+
+  .mobile-nav-toggle {
+    display: none;
   }
 
   @media (max-width: 35rem) {
@@ -75,11 +61,66 @@ export const Nav = styled.nav`
       transform: translateX(100%);
       transition: transform 500ms ease-in-out;
     }
+
     .primary-navigation[data-visible="true"] {
       transform: translateX(0);
     }
+
+    .primary-navigation.underline-indicators > .active {
+      border: 0;
+    }
+
+    .mobile-nav-toggle {
+      display: block;
+      position: absolute;
+      z-index: 2000;
+      right: 1rem;
+      top: 2rem;
+      background: transparent;
+      // conditional background-image over Header.tsx
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 1.5rem;
+      aspect-ratio: 1;
+      border: 0;
+    }
+
+    .mobile-nav-toggle:focus-visible {
+      outline: 5px solid white;
+      outline-offset: 5px;
+    }
   }
 
-  @media (min-width: 35em) and (max-width: 45em) {
+  @media (min-width: 35em) {
+    .primary-navigation {
+      padding-inline: clamp(3rem, 7vw, 7rem);
+    }
+  }
+
+  @media (min-width: 35em) and (max-width: 44.999em) {
+    .primary-navigation a > span {
+      display: none;
+    }
+  }
+
+  @media (min-width: 45em) {
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      height: 1px;
+      width: 100%;
+      margin-right: -2.5rem;
+      background: hsl(var(--clr-white) / 0.25);
+      order: 1;
+    }
+
+    nav {
+      order: 2;
+    }
+
+    .primary-navigation {
+      margin-block: 2rem;
+    }
   }
 `;

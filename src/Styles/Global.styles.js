@@ -8,6 +8,7 @@ export const BodyContainer = styled.div`
   display: grid;
   grid-template-rows: min-content 1fr;
   overflow-x: hidden;
+  overflow-y: hidden;
 
   // bg-images settings
   background-size: cover;
