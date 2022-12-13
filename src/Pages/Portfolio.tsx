@@ -7,10 +7,10 @@ const Portfolio = () => {
       <img src={moon} alt="luna de mientras xd" />
 
       <div className="tab-list underline-indicators flex">
-        <button aria-selected="true" className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Bajo la Música</button>
-        <button aria-selected="false" className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Pablo Palgon</button>
-        <button aria-selected="false" className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Dank Apps</button>
-        <button aria-selected="false" className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">My Portfolio</button>
+        <button className="active uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Bajo la Música</button>
+        <button className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Pablo Palgon</button>
+        <button className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Dank Apps</button>
+        <button className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">My Portfolio</button>
       </div>
 
 
