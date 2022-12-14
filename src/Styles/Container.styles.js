@@ -11,6 +11,7 @@ export const GridContainer = styled.div`
   display: grid;
   place-items: center;
   padding-inline: 1rem;
+  padding-bottom: 4rem;
 
   & * {
     max-width: 50ch;

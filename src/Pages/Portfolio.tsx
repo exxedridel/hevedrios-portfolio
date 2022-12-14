@@ -1,8 +1,9 @@
 import moon from "../Assets/Portfolio/image-moon.png"
+import { GridContainerPortfolio } from "../Styles/Portfolio.styles"
 
 const Portfolio = () => {
   return (
-    <main>
+    <GridContainerPortfolio as="main" className="flow">
       <h1 className="numbered-title"><span aria-hidden="true">01</span>Select a project</h1>
       <img src={moon} alt="luna de mientras xd" />
 
@@ -10,27 +11,28 @@ const Portfolio = () => {
         <button className="active uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Bajo la Música</button>
         <button className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Pablo Palgon</button>
         <button className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Dank Apps</button>
-        <button className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">My Portfolio</button>
+        <button className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">This Portfolio</button>
       </div>
 
+      <article className="destination-info">
+        <h2 className="fs-800 uppercase ff-serif">Bajo la Música</h2>
 
-      <h2 className="fs-800 uppercase ff-serif">Bajo la Música</h2>
+        <p>See our planet as you've never seen it before. A perfect relaxing trip away to help
+          regain perspective and come back refreshed. While you're there, take in some history
+          by visiting the Luna 2 and Apollo 11 landing sites.</p>
 
-      <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-      regain perspective and come back refreshed. While you’re there, take in some history 
-      by visiting the Luna 2 and Apollo 11 landing sites.</p>
-
-      <div className="flex">
-        <div>
-          <h3 className="text-accent fs-200 uppercase">Avg. distance</h3>
-          <p className="fs-500 ff-serif uppercase">384,400 km</p>
+        <div className="destination-meta flex">
+          <div>
+            <h3 className="text-accent fs-200 uppercase">Avg. distance</h3>
+            <p className="fs-500 ff-serif uppercase">384,400 km</p>
+          </div>
+          <div>
+            <h3 className="text-accent fs-200 uppercase">Est. travel time</h3>
+            <p className="fs-500 ff-serif uppercase">3 days</p>
+          </div>
         </div>
-        <div>
-          <h3 className="text-accent fs-200 uppercase">Est. travel time</h3>
-          <p className="fs-500 ff-serif uppercase">3 days</p>
-        </div>
-      </div>
-    </main>
+      </article>
+    </GridContainerPortfolio>
   )
 }
 
