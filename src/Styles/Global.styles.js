@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
-import bgHomeMobile from "../Assets/Home/background-home-mobile.jpg";
-import bgHomeTablet from "../Assets/Home/background-home-tablet.jpg";
-import bgHomeDesktop from "../Assets/Home/background-home-desktop.jpg";
+import bgHomeMobile from "../Assets/Home-Page/background-home-mobile.jpg";
+import bgHomeTablet from "../Assets/Home-Page/background-home-tablet.jpg";
+import bgHomeDesktop from "../Assets/Home-Page/background-home-desktop.jpg";
 
 export const BodyContainer = styled.div`
   min-height: 100vh;

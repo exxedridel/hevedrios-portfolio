@@ -1,18 +1,29 @@
 import { GridContainerServices } from "../Styles/Services.styles"
+import douglasHurley from "../Assets/Services-Page/image-douglas-hurley.png"
 
 const Services = () => {
   return (
-    <GridContainerServices as="main">
-      02 Meet your crew
+    <GridContainerServices as="main" className="flow">
+      <h1 className="numbered-title"><span aria-hidden="true">02</span> Meet your crew</h1>
 
-      Commander
-      Douglas Hurley
+      <div className="dot-indicators flex">
+        <button className="active"><span className="sr-only">The commander</span></button>
+        <button><span className="sr-only">The mission specialist</span></button>
+        <button><span className="sr-only">The pilot</span></button>
+        <button><span className="sr-only">The crew engineer</span></button>
+      </div>
+      
+      <article className="crew-details">
+        <h2 className="fs-600 ff-serif uppercase">Commander</h2>
+        <p className="fs-700 uppercase ff-serif">Douglas Hurley</p>
+        <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+          and former NASA astronaut. He launched into space for the third time as
+          commander of Crew Dragon Demo-2.</p>
+      </article>
 
-      Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
-      and former NASA astronaut. He launched into space for the third time as
-      commander of Crew Dragon Demo-2.
+      <img src={douglasHurley} alt="Douglas Hurley" />
     </GridContainerServices>
   )
 }
 
-export default Services
+export default Services;

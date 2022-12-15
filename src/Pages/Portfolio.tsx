@@ -1,5 +1,5 @@
-import moon from "../Assets/Portfolio/image-moon.png"
 import { GridContainerPortfolio } from "../Styles/Portfolio.styles"
+import moon from "../Assets/Portfolio-Page/image-moon.png"
 
 const Portfolio = () => {
   return (
