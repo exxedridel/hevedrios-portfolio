@@ -7,7 +7,6 @@ export const BodyContainer = styled.div`
   min-height: 100vh;
   display: grid;
   grid-template-rows: min-content 1fr;
-  overflow-x: hidden;
   overflow-y: hidden;
 
   // bg-images settings

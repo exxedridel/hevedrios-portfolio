@@ -2,17 +2,18 @@ import styled from "styled-components";
 
 export const SkipToContent = styled.button`
   position: absolute;
-  z-index: 9999;
+  z-index: -1;
   background: hsl(var(--clr-white));
   color: hsl(var(--clr-dark));
   text-decoration: underline;
   padding: 0.5em 1em;
   margin-inline: auto;
-  transform: translateY(-102%);
+  transform: translateY(-100%);
   transition: transform 250ms ease-in;
 
   &:focus {
-    transform: translateY(2%) translateX(2%);
+    z-index: 9999;
+    transform: translateY(0%);
   }
 `;
 

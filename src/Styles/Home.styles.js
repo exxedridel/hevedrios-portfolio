@@ -2,8 +2,12 @@ import styled from "styled-components";
 import { GridContainer } from "./Container.styles";
 
 export const GridContainerHome = styled(GridContainer)`
+  & > *:first-child {
+    padding-top: .65rem;
+  }
+
   & > *:last-child {
-    padding-top: 1.2rem;
+    padding-top: 1.5rem;
   }
 
   @media (min-width: 45em) {
