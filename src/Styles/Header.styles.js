@@ -8,11 +8,11 @@ export const SkipToContent = styled.button`
   text-decoration: underline;
   padding: 0.5em 1em;
   margin-inline: auto;
-  transform: translateY(-100%);
+  transform: translateY(-102%);
   transition: transform 250ms ease-in;
 
   &:focus {
-    transform: translateY(0);
+    transform: translateY(2%) translateX(2%);
   }
 `;
 

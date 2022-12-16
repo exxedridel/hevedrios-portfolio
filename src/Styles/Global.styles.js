@@ -190,6 +190,11 @@ select {
   margin-top: var(--flow-space, 3rem); /* normally setted up to 1px */
   /* outline: 1px solid red; */
 }
+
+.flow-space--small {
+  --flow-space: .75rem;
+}
+
 /* The difference between :is and :where = :is gonna take the higher on specificity and apply it to the rule */
 /* :where in the other hand dosent add any specificity */
 
@@ -378,10 +383,11 @@ select {
 } */
 
 .underline-indicators > * {
-  padding: var(--underline-gap, 1rem) 0;
+  padding: var(--underline-gap, 0.5rem) 0;
   border: 0;
   cursor: pointer;
   border-bottom: 0.2rem solid hsl(var(--clr-light) / 0);
+  background-color: transparent;
 }
 
 .underline-indicators > *:hover,

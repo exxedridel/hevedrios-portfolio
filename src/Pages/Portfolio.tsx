@@ -1,5 +1,5 @@
 import { GridContainerPortfolio } from "../Styles/Portfolio.styles"
-import moon from "../Assets/Portfolio-Page/image-moon.png"
+import moon from "../Assets/Portfolio-Page/image-moon.webp"
 
 const Portfolio = () => {
   return (
@@ -8,13 +8,13 @@ const Portfolio = () => {
       <img src={moon} alt="luna de mientras xd" />
 
       <div className="tab-list underline-indicators flex">
-        <button className="active uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Moon</button>
-        <button className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Mars</button>
-        <button className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Europa</button>
-        <button className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Titan</button>
+        <button className="active uppercase ff-sans-cond text-accent letter-spacing-2">Moon</button>
+        <button className="uppercase ff-sans-cond text-accent letter-spacing-2">Mars</button>
+        <button className="uppercase ff-sans-cond text-accent letter-spacing-2">Europa</button>
+        <button className="uppercase ff-sans-cond text-accent letter-spacing-2">Titan</button>
       </div>
 
-      <article className="destination-info">
+      <article className="destination-info flow flow-space--small">
         <h2 className="fs-800 uppercase ff-serif">Moon</h2>
 
         <p>See our planet as you've never seen it before. A perfect relaxing trip away to help

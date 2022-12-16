@@ -98,9 +98,9 @@ const designSystem = () => {
             {/* Tabs */}
             <div className="tab-list underline-indicators flex">
               {/* aria - accesible internet rich aplications */}
-              <button className="active uppercase ff-sans-cond text-accent bg-dark fs letter-spacing-2">Moon</button>
-              <button className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Mars</button>
-              <button className="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Europa</button>
+              <button className="active uppercase ff-sans-cond text-accent fs letter-spacing-2">Moon</button>
+              <button className="uppercase ff-sans-cond text-accent letter-spacing-2">Mars</button>
+              <button className="uppercase ff-sans-cond text-accent letter-spacing-2">Europa</button>
             </div>
 
             {/* Dots */}

@@ -27,6 +27,10 @@ export const GridContainerServices = styled(GridContainer)`
     grid-area: content;
   }
 
+  .crew-details h2 {
+    opacity: .5;
+  }
+
   @media (min-width: 35em) {
     padding-bottom: 0;
     grid-template-areas:
