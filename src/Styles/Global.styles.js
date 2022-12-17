@@ -2,30 +2,15 @@ import styled, { createGlobalStyle } from "styled-components";
 import bgHomeMobile from "../Assets/Home-Page/background-home-mobile.jpg";
 import bgHomeTablet from "../Assets/Home-Page/background-home-tablet.jpg";
 import bgHomeDesktop from "../Assets/Home-Page/background-home-desktop.jpg";
+import bgOtherMobile from "../Assets/Portfolio-Page/background-destination-mobile.jpg";
+import bgOtherTablet from "../Assets/Portfolio-Page/background-destination-tablet.jpg";
+import bgOtherDesktop from "../Assets/Portfolio-Page/background-destination-desktop.jpg";
 
 export const BodyContainer = styled.div`
   min-height: 100vh;
   display: grid;
   grid-template-rows: min-content 1fr;
-  overflow-y: hidden;
-
-  // bg-images settings
-  background-size: cover;
-  background-position: bottom center;
-  background-image: url(${bgHomeMobile});
-
-  @media (min-width: 35rem) {
-    & {
-      background-position: center center;
-      background-image: url(${bgHomeTablet});
-    }
-  }
-
-  @media (min-width: 45rem) {
-    & {
-      background-image: url(${bgHomeDesktop});
-    }
-  }
+  overflow-x: hidden;
 `;
 
 export const GlobalStyles = createGlobalStyle`
@@ -34,21 +19,10 @@ export const GlobalStyles = createGlobalStyle`
 /* ------------------- */
 
 :root {
-  /* custom colors */
-  /* --clr-dark: 287 20.5% 13.3%;
-  --clr-light: 365 68.9% 90%;
-  --clr-white: 0 0% 100%; */
-
   /* original colors */
   --clr-dark: 230 35% 7%;
   --clr-light: 231 77% 90%;
   --clr-white: 0 0% 100%;
-
-  /* pastel sunset pallet */
-  /* --clr-purple: 287 16.5% 27.3%;
-  --clr-magenta: 327 28.0% 36.5%;
-  --clr-crimson: 345 38.9% 50.6%;
-  --clr-gold: 27 69.6% 69.0%; */
 
   /* font-sizes */
   --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
@@ -75,6 +49,7 @@ export const GlobalStyles = createGlobalStyle`
     --fs-400: 1rem;
   }
 }
+
 /* desktop */
 @media (min-width: 45em) {
   :root {
@@ -88,8 +63,7 @@ export const GlobalStyles = createGlobalStyle`
 /* ------------------- */
 /* Reset               */
 /* ------------------- */
-
-/* https://piccalil.li/blog/a-modern-css-reset/ */
+/* as https://piccalil.li/blog/a-modern-css-reset/ */
 
 /* Box sizing */
 *,
@@ -111,6 +85,7 @@ picture {
   margin: 0;
 }
 
+/* Reset font-sizes*/
 h1,
 h2,
 h3,
@@ -121,7 +96,8 @@ p {
   font-weight: 400;
 }
 
-/* set up the body (only format properties), because react wont display the div correctly */
+/* set up the body (only format properties), because webpack wont precompile the div correctly */
+// those display properties are defined at the top of this file in his own styled component
 body {
   background-color: hsl(var(--clr-dark));
   font-family: var(--ff-sans-normal);
@@ -130,12 +106,6 @@ body {
   background-color: hsl(var(--clr-dark));
   line-height: 1.5;
 }
-// these display properties are defined at the top of this file in his own styled component
-/* body {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: min-content 1fr;
-} */
 
 /* make images easier to work with */
 img,
@@ -165,11 +135,53 @@ select {
 }
 
 /* ------------------- */
+/* Background images   */
+/* ------------------- */
+
+/* Home */
+.bgImageHome {
+  background-size: cover;
+  background-position: bottom center;
+  background-image: url(${bgHomeMobile});
+}
+
+@media (min-width: 35rem) {
+  .bgImageHome {
+    background-position: center center;
+    background-image: url(${bgHomeTablet});
+  }
+}
+
+@media (min-width: 45rem) {
+  .bgImageHome {
+    background-image: url(.${bgHomeDesktop});
+  }
+}
+/* Other */
+.bgImageOther {
+  background-size: cover;
+  background-position: bottom center;
+  background-image: url(${bgOtherMobile});
+}
+
+@media (min-width: 35rem) {
+  .bgImageOther {
+    background-position: center center;
+    background-image: url(${bgOtherTablet});
+  }
+}
+
+@media (min-width: 45rem) {
+  .bgImageOther {
+    background-image: url(.${bgOtherDesktop});
+  }
+}
+
+/* ------------------- */
 /* Utility classes     */
 /* ------------------- */
 
 /* general */
-
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
@@ -184,10 +196,8 @@ select {
   display: block;
 }
 
-/* .flow > * + * {  same as below without adding the extra especificity needed*/
 .flow > *:where(:not(:first-child)) {
-  margin-top: var(--flow-space, 3rem); /* normally setted up to 1px */
-  /* outline: 1px solid red; */
+  margin-top: var(--flow-space, 1rem);
 }
 
 .flow-space--small {
