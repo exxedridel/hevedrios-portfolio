@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
+import AppContext from "../Context/AppContext"
 import { Link } from "react-router-dom"
 import { SkipToContent, Logo, HeaderStyled } from "../Styles/Header.styles"
 import logo from "../Assets/Shared/logo-Heved.svg"
@@ -6,11 +7,8 @@ import iconHamburger from "../Assets/Shared/icon-hamburger.svg"
 import iconClose from "../Assets/Shared/icon-close.svg"
 
 const Header = () => {
+   const { mainFocus } = useContext(AppContext);
    const [toggle, setToggle] = useState(false)
-
-   function scrollClick() {
-      console.log("skip to main content")
-   }
 
    function toggleClick() { setToggle(!toggle) }
 
@@ -20,7 +18,7 @@ const Header = () => {
 
    return (
       <>
-         <SkipToContent onClick={scrollClick}>Skip to content</SkipToContent>
+         <SkipToContent onClick={mainFocus}>Skip to content</SkipToContent>
          <HeaderStyled className="primary-header flex">
             <div>
                <Logo src={logo} alt="Heved logo" />

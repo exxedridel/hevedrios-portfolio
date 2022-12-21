@@ -1,16 +1,17 @@
-import Header from '../Components/Header';
-import { BodyContainer } from '../Styles/Global.styles';
+
+import { BodyContainer } from "../Styles/Global.styles";
+import Header from "../Components/Header";
 
 const Layout = ({ children }) => {
+  
+  const bgImage = "bgImageHome";
 
-	const bgImage = 'bgImageHome'
-	
-	return (
-		<BodyContainer className={bgImage}>
-			<Header />
-			{children}
-		</BodyContainer>
-	);
-}
+  return (
+    <BodyContainer className={bgImage}>
+      <Header />
+      {children}
+    </BodyContainer>
+  );
+};
 
-export default Layout
+export default Layout;

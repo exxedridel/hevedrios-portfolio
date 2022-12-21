@@ -78,7 +78,7 @@ export const HeaderStyled = styled.header`
       right: 1rem;
       top: 2rem;
       background: transparent;
-      // conditional background-image over Header.tsx
+      // conditional background-image is in Header.tsx
       background-repeat: no-repeat;
       background-position: center;
       width: 1.5rem;
