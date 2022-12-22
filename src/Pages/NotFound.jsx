@@ -3,9 +3,9 @@ import AppContext from "../Context/AppContext";
 import { Container } from "../Styles/Container.styles"
 
 const NotFound = () => {
-  const { setBgImage } = useContext(AppContext);
-
+  
   useEffect(() => {
+    const { setBgImage } = useContext(AppContext);
     setBgImage("bgImageOther");
   },[])
 

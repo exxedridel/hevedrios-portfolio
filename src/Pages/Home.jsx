@@ -5,9 +5,10 @@ import { GridContainerHome } from "../Styles/Home.styles";
 import { ButtonLarge } from "../Styles/Button.styles";
 
 const Home = () => {
-  const { mainRef, setBgImage } = useContext(AppContext);
+  const { mainRef } = useContext(AppContext);
 
   useEffect(() => {
+    const { setBgImage } = useContext(AppContext);
     setBgImage("bgImageHome");
   },[])
 
