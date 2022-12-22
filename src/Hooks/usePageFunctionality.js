@@ -1,11 +1,10 @@
 import { useState, useRef } from "react";
 
 const usePageFunctionality = () => {
-  const [bgImage, setBgImage] = useState("bgImageHome")
+  const [bgImage, setBgImage] = useState("")
   const mainRef = useRef(null);
 
   function mainFocus() {
-    console.log("sisirve");
     mainRef.current.focus();
   }
 

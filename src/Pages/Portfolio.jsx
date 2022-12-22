@@ -4,10 +4,10 @@ import { GridContainerPortfolio } from "../Styles/Portfolio.styles"
 import moon from "../Assets/Portfolio-Page/image-moon.webp"
 
 const Portfolio = () => {
-  
+  const { bgImage, setBgImage } = useContext(AppContext);
+
   useEffect(() => {
-    const { setBgImage } = useContext(AppContext);
-    setBgImage("bgImageOther");
+    setBgImage("bgImageOther")
   },[])
 
   return (
