@@ -1,7 +1,15 @@
+import { useContext, useEffect } from "react";
+import AppContext from "../Context/AppContext";
 import { GridContainerPortfolio } from "../Styles/Portfolio.styles"
 import moon from "../Assets/Portfolio-Page/image-moon.webp"
 
 const Portfolio = () => {
+  const { setBgImage } = useContext(AppContext);
+
+  useEffect(() => {
+    setBgImage("bgImageOther");
+  },[])
+
   return (
     <GridContainerPortfolio as="main" className="flow">
       <h1 className="numbered-title"><span aria-hidden="true">01</span>Select a project</h1>

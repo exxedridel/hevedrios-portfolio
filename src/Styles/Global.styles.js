@@ -60,10 +60,9 @@ export const GlobalStyles = createGlobalStyle`
   }
 }
 
-/* ------------------- */
-/* Reset               */
-/* ------------------- */
-/* as https://piccalil.li/blog/a-modern-css-reset/ */
+/* -------------------------------------------- */
+/*                Reset as in:                  */
+/* https://piccalil.li/blog/a-modern-css-reset/ */
 
 /* Box sizing */
 *,

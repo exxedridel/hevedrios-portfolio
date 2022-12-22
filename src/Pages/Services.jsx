@@ -1,7 +1,15 @@
+import { useContext, useEffect } from "react";
+import AppContext from "../Context/AppContext";
 import { GridContainerServices } from "../Styles/Services.styles"
 import douglasHurley from "../Assets/Services-Page/image-douglas-hurley.png"
 
 const Services = () => {
+  const { setBgImage } = useContext(AppContext);
+
+  useEffect(() => {
+    setBgImage("bgImageOther");
+  },[])
+  
   return (
     <GridContainerServices as="main" className="flow">
       <h1 className="numbered-title"><span aria-hidden="true">02</span> Meet your crew</h1>

@@ -1,6 +1,7 @@
-import { useRef } from "react";
+import { useState, useRef } from "react";
 
 const usePageFunctionality = () => {
+  const [bgImage, setBgImage] = useState("bgImageHome")
   const mainRef = useRef(null);
 
   function mainFocus() {
@@ -8,7 +9,7 @@ const usePageFunctionality = () => {
     mainRef.current.focus();
   }
 
-  return { mainRef, mainFocus };
+  return { bgImage, setBgImage, mainRef, mainFocus };
 };
 
 export default usePageFunctionality;

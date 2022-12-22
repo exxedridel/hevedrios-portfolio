@@ -1,11 +1,15 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import AppContext from "../Context/AppContext";
 import { Link } from "react-router-dom";
 import { GridContainerHome } from "../Styles/Home.styles";
 import { ButtonLarge } from "../Styles/Button.styles";
 
 const Home = () => {
-  const { mainRef } = useContext(AppContext);
+  const { mainRef, setBgImage } = useContext(AppContext);
+
+  useEffect(() => {
+    setBgImage("bgImageHome");
+  },[])
 
   return (
     <>
