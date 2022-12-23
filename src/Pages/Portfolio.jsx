@@ -4,11 +4,11 @@ import { GridContainerPortfolio } from "../Styles/Portfolio.styles";
 import moon from "../Assets/Portfolio-Page/image-moon.webp";
 
 const Portfolio = () => {
-  const { bgImage, setBgImage } = useContext(AppContext);
+  const { setBgImage } = useContext(AppContext);
 
   useEffect(() => {
-    bgImage ? bgImage : bgImage;
     setBgImage("bgImageOther");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

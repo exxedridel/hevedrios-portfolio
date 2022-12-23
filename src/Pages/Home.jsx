@@ -9,7 +9,8 @@ const Home = () => {
 
   useEffect(() => {
     setBgImage((prevState) => [...prevState, "bgImageHome"]);
-  },[])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <>

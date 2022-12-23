@@ -7,7 +7,8 @@ const NotFound = () => {
 
   useEffect(() => {
     setBgImage("bgImageOther");
-  },[])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <Container><h2>Error 404: Not Found</h2></Container>
