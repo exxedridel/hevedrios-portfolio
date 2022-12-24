@@ -67,9 +67,9 @@ export const HeaderStyled = styled.header`
       transform: translateX(0);
     }
 
-    .primary-navigation.underline-indicators > .active {
+    /* .primary-navigation.underline-indicators > .active {
       border: 0;
-    }
+    } */
 
     .mobile-nav-toggle {
       display: block;

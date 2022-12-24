@@ -1,6 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
-import bgHomeMobile from "../Assets/Home-Page/background-home-mobile.jpg";
-import bgHomeTablet from "../Assets/Home-Page/background-home-tablet.jpg";
+import bgHomeMobile from "../Assets/Home-Page/background-keys-mobile.jpg";
+import bgHomeTablet from "../Assets/Home-Page/background-keys-tablet.jpg";
 import bgHomeDesktop from "../Assets/Home-Page/background-home-desktop.jpg";
 import bgOtherMobile from "../Assets/Portfolio-Page/background-destination-mobile.jpg";
 import bgOtherTablet from "../Assets/Portfolio-Page/background-destination-tablet.jpg";

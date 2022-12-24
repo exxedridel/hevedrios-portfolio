@@ -7,12 +7,12 @@ import Portfolio from "../Pages/Portfolio"
 import Services from "../Pages/Services"
 import About from "../Pages/About"
 import NotFound from "../Pages/NotFound"
-import usePageFunctionality from "../Hooks/usePageFunctionality"
+import useAppState from "../Hooks/useAppState"
 
 function App() {
-  const pageFunctionality = usePageFunctionality();
+  const appState = useAppState();
   return (
-    <AppContext.Provider value={pageFunctionality}>
+    <AppContext.Provider value={appState}>
       <GlobalStyles />
       <HashRouter>
           <Layout>
