@@ -34,4 +34,15 @@ export const ButtonLarge = styled.div`
   .large-button:focus-visible {
     outline: none;
   }
+
+  @media (min-width: 35em) {
+    .large-button {
+      padding: 0 1.5em;
+    }
+  }
+  @media (min-width: 45em) {
+    .large-button {
+      padding: 0 2em;
+    }
+  }
 `;

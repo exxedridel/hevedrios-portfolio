@@ -17,7 +17,7 @@ const Home = () => {
       <GridContainerHome as="main">
         <div>
           <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">
-            Nice to have you here, I'm{" "}
+            I'm a web engineer, name is
             <span className="d-block fs-900 ff-serif text-white">Heved</span>
           </h1>
           <p>
