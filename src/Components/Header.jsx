@@ -7,7 +7,7 @@ import iconHamburger from "../Assets/Shared/icon-hamburger.svg"
 import iconClose from "../Assets/Shared/icon-close.svg"
 
 const Header = () => {
-   const { mainFocus } = useContext(AppContext);
+   const { mainFocus, homeActive, portfolioActive, servicesActive, aboutActive } = useContext(AppContext);
    const [toggle, setToggle] = useState(false)
 
    function toggleClick() { setToggle(!toggle) }
@@ -28,10 +28,10 @@ const Header = () => {
             </button>
             <nav >
                <ul id="primary-navigation" data-visible={toggle} className="primary-navigation underline-indicators flex">
-                  <li className="active"><Link to="/" className="uppercase ff-sans-cond text-white letter-spacing-2"><span aria-hidden="true">00</span>Home</Link></li>
-                  <li><Link to="portfolio" className="uppercase ff-sans-cond text-white letter-spacing-2"><span aria-hidden="true">01</span>Portfolio</Link></li>
-                  <li><Link to="services" className="uppercase ff-sans-cond text-white letter-spacing-2"><span aria-hidden="true">02</span>Services</Link></li>
-                  <li><Link to="about" className="uppercase ff-sans-cond text-white letter-spacing-2"><span aria-hidden="true">03</span>About</Link></li>
+                  <li className={homeActive}><Link to="/" className="uppercase ff-sans-cond text-white letter-spacing-2"><span aria-hidden="true">00</span>Home</Link></li>
+                  <li className={portfolioActive}><Link to="portfolio" className="uppercase ff-sans-cond text-white letter-spacing-2"><span aria-hidden="true">01</span>Portfolio</Link></li>
+                  <li className={servicesActive}><Link to="services" className="uppercase ff-sans-cond text-white letter-spacing-2"><span aria-hidden="true">02</span>Services</Link></li>
+                  <li className={aboutActive}><Link to="about" className="uppercase ff-sans-cond text-white letter-spacing-2"><span aria-hidden="true">03</span>About</Link></li>
                </ul>
             </nav>
          </HeaderStyled>

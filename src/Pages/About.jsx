@@ -3,10 +3,14 @@ import AppContext from "../Context/AppContext";
 import { Container } from "../Styles/Container.styles";
 
 const About = () => {
-  const { setBgImage } = useContext(AppContext);
+  const { setBgImage, setAboutActive } = useContext(AppContext);
 
   useEffect(() => {
     setBgImage("bgImageOther");
+    setAboutActive("active");
+    return function () {
+      setAboutActive("");
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

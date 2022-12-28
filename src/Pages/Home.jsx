@@ -5,12 +5,16 @@ import { GridContainerHome } from "../Styles/Home.styles";
 import { ButtonLarge } from "../Styles/Button.styles";
 
 const Home = () => {
-  const { mainRef, setBgImage } = useContext(AppContext);
+  const { mainRef, setBgImage, setHomeActive } = useContext(AppContext);
 
   useEffect(() => {
     setBgImage((prevState) => [...prevState, "bgImageHome"]);
+    setHomeActive("active");
+    return function () {
+      setHomeActive("");
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, []);
 
   return (
     <>
