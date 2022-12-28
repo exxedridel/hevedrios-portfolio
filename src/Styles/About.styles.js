@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { GridContainer } from "../Styles/Container.styles";
+import { GridContainer } from "./Container.styles";
 
 export const GridContainerServices = styled(GridContainer)`
   --flow-space: 2rem;
@@ -45,7 +45,7 @@ export const GridContainerServices = styled(GridContainer)`
     }
   }
 
-  @media (min-width: 45em) {
+  @media (min-width: 55em) {
     grid-template-areas:
       ". title title ."
       ". content image ."

@@ -98,13 +98,13 @@ export const HeaderStyled = styled.header`
     }
   }
 
-  @media (min-width: 35em) and (max-width: 44.999em) {
+  @media (min-width: 35em) and (max-width: 54.999em) {
     .primary-navigation a > span {
       display: none;
     }
   }
 
-  @media (min-width: 45em) {
+  @media (min-width: 55em) {
     &::after {
       content: "";
       display: block;

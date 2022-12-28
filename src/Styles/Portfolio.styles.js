@@ -53,7 +53,7 @@ export const GridContainerPortfolio = styled(GridContainer)`
     }
   }
 
-  @media (min-width: 45em) {
+  @media (min-width: 55em) {
     justify-items: start;
     align-content: start;
     grid-template-areas:

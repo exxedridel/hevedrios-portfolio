@@ -24,7 +24,7 @@ export const GridContainer = styled.div`
     max-width: 50ch;
   }
 
-  @media (min-width: 45em) {
+  @media (min-width: 55em) {
     & {
       text-align: left;
       column-gap: var(--container-gap, 2rem);

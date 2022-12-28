@@ -8,7 +8,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     setBgImage("bgImageOther");
-    setPortfolioActive("active")
+    setPortfolioActive("active");
     return function () {
       setPortfolioActive("");
     };
@@ -24,37 +24,38 @@ const Portfolio = () => {
 
       <div className="tab-list underline-indicators flex">
         <button className="active uppercase ff-sans-cond text-accent letter-spacing-2">
-          Moon
+          bajo◽la musica
         </button>
         <button className="uppercase ff-sans-cond text-accent letter-spacing-2">
-          Mars
+          Xperimental Sounds
         </button>
         <button className="uppercase ff-sans-cond text-accent letter-spacing-2">
-          Europa
+          Dank Apps
         </button>
         <button className="uppercase ff-sans-cond text-accent letter-spacing-2">
-          Titan
+          This webapp
         </button>
       </div>
 
       <article className="destination-info flow flow-space--small">
-        <h2 className="fs-800 uppercase ff-serif">Moon</h2>
+        <h2 className="fs-800 uppercase ff-serif">Bajo la musica</h2>
 
         <p>
-          See our planet as you've never seen it before. A perfect relaxing trip
-          away to help regain perspective and come back refreshed. While you're
-          there, take in some history by visiting the Luna 2 and Apollo 11
-          landing sites.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ut
+          enim praesentium vitae maxime modi in, perspiciatis labore minus
+          recusandae excepturi explicabo magni sequi repudiandae reiciendis
+          impedit nemo quibusdam quasi officiis incidunt nulla nihil dolores
+          dolor. Inventore quidem itaque quo sunt.
         </p>
 
         <div className="destination-meta flex">
           <div>
-            <h3 className="text-accent fs-200 uppercase">Avg. distance</h3>
-            <p className="ff-serif uppercase">384,400 km</p>
+            <h3 className="text-accent fs-200 uppercase">Go to page</h3>
+            <p className="ff-serif uppercase">button</p>
           </div>
           <div>
-            <h3 className="text-accent fs-200 uppercase">Est. travel time</h3>
-            <p className="ff-serif uppercase">3 days</p>
+            <h3 className="text-accent fs-200 uppercase">Checkout code</h3>
+            <p className="ff-serif uppercase">button</p>
           </div>
         </div>
       </article>

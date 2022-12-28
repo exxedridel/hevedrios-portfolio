@@ -2,9 +2,7 @@ import styled, { createGlobalStyle } from "styled-components";
 import bgHomeMobile from "../Assets/Home-Page/background-keys-mobile.jpg";
 import bgHomeTablet from "../Assets/Home-Page/background-keys-tablet.jpg";
 import bgHomeDesktop from "../Assets/Home-Page/background-keys-desktop.jpg";
-import bgOtherMobile from "../Assets/Portfolio-Page/background-destination-mobile.jpg";
-import bgOtherTablet from "../Assets/Portfolio-Page/background-destination-tablet.jpg";
-import bgOtherDesktop from "../Assets/Portfolio-Page/background-destination-desktop.jpg";
+import bgOtherMobile from "../Assets/Shared/subtle_carbon.webp";
 
 export const BodyContainer = styled.div`
   min-height: 100vh;
@@ -157,29 +155,16 @@ select {
   }
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 55rem) {
   .bgImageHome {
-    background-image: url(.${bgHomeDesktop});
+    background-image: url(${bgHomeDesktop});
   }
 }
 /* Other */
 .bgImageOther {
-  background-size: cover;
+  /* background-size: cover; */
   background-position: bottom center;
   background-image: url(${bgOtherMobile});
-}
-
-@media (min-width: 35rem) {
-  .bgImageOther {
-    background-position: center center;
-    background-image: url(${bgOtherTablet});
-  }
-}
-
-@media (min-width: 45rem) {
-  .bgImageOther {
-    background-image: url(.${bgOtherDesktop});
-  }
 }
 
 /* ------------------- */
@@ -331,70 +316,6 @@ select {
 /* - - - - - - - */
 /* Components    */
 /* - - - - - - - */
-
-/* .large-button {
-  font-size: 2rem;
-  position: relative;
-  z-index: 1;
-  display: inline-grid;
-  place-items: center; // shorthand for justify and align items 
-  padding: 0 1.5em;
-  border-radius: 50%;
-  aspect-ratio: 1;
-  text-decoration: none;
-}
-
-.large-button::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  width: 100%; // optional approach to aspect-ratio 
-  height: 100%;
-  background: hsl(var(--clr-white) / 0.1);
-  border-radius: 50%; // or :inherit
-  opacity: 0;
-  transition: opacity 500ms linear, transform 750ms ease-in-out;
-}
-
-.large-button:hover::after,
-.large-button:focus::after {
-  opacity: 1;
-  transform: scale(1.5);
-} */
-
-/* .primary-navigation {
-  --underline-gap: 2rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-@media (max-width: 35rem) {
-  .primary-navigation {
-    --underline-gap: .5rem;
-    position: fixed;
-    z-index: 1000;
-    inset: 0 0 0 30%;
-    background: black;
-    list-style: none;
-    padding: min(20rem, 15vh) 2rem;
-    margin: 0;
-    flex-direction: column;
-  }
-}
-
-.primary-navigation.underline-indicators > .active {
-  border: 0;
-}
-
-.primary-navigation a {
-  text-decoration: none;
-}
-
-.primary-navigation a > span {
-  font-weight: 700;
-  margin-right: 0.5em;
-} */
 
 .underline-indicators > * {
   padding: var(--underline-gap, 0.5rem) 0;

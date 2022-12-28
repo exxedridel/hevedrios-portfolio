@@ -14,7 +14,13 @@ export const GridContainerHome = styled(GridContainer)`
     padding-top: 1.5rem;
   }
 
-  @media (min-width: 45em) {
+  @media (min-width: 35em) {
+    & {
+      padding-top: 1rem;
+    }
+  }
+
+  @media (min-width: 55em) {
     & {
       padding-bottom: max(6rem, 20vh);
       align-items: end;
