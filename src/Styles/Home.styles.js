@@ -2,6 +2,10 @@ import styled from "styled-components";
 import { GridContainer } from "./Container.styles";
 
 export const GridContainerHome = styled(GridContainer)`
+  & span {
+    color: hsl(var(--clr-crimson));
+  }
+
   & > *:first-child {
     padding-top: .65rem;
   }

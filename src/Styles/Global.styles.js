@@ -19,10 +19,16 @@ export const GlobalStyles = createGlobalStyle`
 /* ------------------- */
 
 :root {
-  /* original colors */
-  --clr-dark: 230 35% 7%;
-  --clr-light: 231 77% 90%;
+  
+  --clr-dark: 60 100% 0%;
+  --clr-light: 68 99% 41%;
   --clr-white: 0 0% 100%;
+  --clr-crimson: 348 83.3% 47.1%;
+  
+  /* original colors */
+  /* --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%; */
 
   /* font-sizes */
   --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
