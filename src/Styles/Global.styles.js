@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
-import bgHomeMobile from "../Assets/Home-Page/background-keys-mobile.jpg";
-import bgHomeTablet from "../Assets/Home-Page/background-keys-tablet.jpg";
-import bgHomeDesktop from "../Assets/Home-Page/background-keys-desktop.jpg";
+import bgHomeMobile from "../Assets/Home/background-keys-mobile.jpg";
+import bgHomeTablet from "../Assets/Home/background-keys-tablet.jpg";
+import bgHomeDesktop from "../Assets/Home/background-keys-desktop.jpg";
 import bgOtherMobile from "../Assets/Shared/subtle_carbon.webp";
 
 export const BodyContainer = styled.div`
