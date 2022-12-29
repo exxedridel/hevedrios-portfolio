@@ -331,7 +331,7 @@ select {
 }
 
 .underline-indicators > .active,
-.underline-indicators > [aria-selected="true"] {
+.underline-indicators > [aria-current="true"] {
   color: hsl(var(--clr-white) / 1);
   border-color: hsl(var(--clr-white) / 1);
 }

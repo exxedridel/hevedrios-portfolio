@@ -30,28 +30,28 @@ const Portfolio = () => {
       <div className="tab-list underline-indicators flex">
         <button
           onClick={() => handleClick(0)}
-          aria-selected="true"
+          aria-current="true"
           className="uppercase ff-sans-cond text-accent letter-spacing-2"
         >
           {data[0].title}
         </button>
         <button
           onClick={() => handleClick(1)}
-          aria-selected="false"
+          aria-current="false"
           className="uppercase ff-sans-cond text-accent letter-spacing-2"
         >
           {data[1].title}
         </button>
         <button
           onClick={() => handleClick(2)}
-          aria-selected="false"
+          aria-current="false"
           className="uppercase ff-sans-cond text-accent letter-spacing-2"
         >
           {data[2].title}
         </button>
         <button
           onClick={() => handleClick(3)}
-          aria-selected="false"
+          aria-current="false"
           className="uppercase ff-sans-cond text-accent letter-spacing-2"
         >
           {data[3].title}
