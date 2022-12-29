@@ -6,7 +6,6 @@ import data from "../Data/projectsData";
 const Portfolio = () => {
   const { setBgImage, setPortfolioActive } = useContext(AppContext);
   const [currentProject, setCurrentProject] = useState(0);
-  const [active, setActive] = useState("");
 
   useEffect(() => {
     setBgImage("bgImageOther");
