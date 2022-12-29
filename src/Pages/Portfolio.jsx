@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import AppContext from "../Context/AppContext";
 import { GridContainerPortfolio } from "../Styles/Portfolio.styles";
-import data from "../Data/projectsData";
+import projects from "../Data/projectsData";
 
 const Portfolio = () => {
   const { setBgImage, setPortfolioActive } = useContext(AppContext);
@@ -18,6 +18,10 @@ const Portfolio = () => {
 
   function handleClick(index) {
     setCurrentProject(index);
+    document
+      .querySelector('[aria-current="true"]')
+      .setAttribute("aria-current", false);
+    document.getElementById(index).setAttribute("aria-current", true);
   }
 
   return (
@@ -25,45 +29,28 @@ const Portfolio = () => {
       <h1 className="numbered-title">
         <span aria-hidden="true">01</span>Select a project
       </h1>
-      <img src={data[currentProject].image} alt="Current project" />
+      <img src={projects[currentProject].image} alt="Current project" />
 
       <div className="tab-list underline-indicators flex">
-        <button
-          onClick={() => handleClick(0)}
-          aria-current="true"
-          className="uppercase ff-sans-cond text-accent letter-spacing-2"
-        >
-          {data[0].title}
-        </button>
-        <button
-          onClick={() => handleClick(1)}
-          aria-current="false"
-          className="uppercase ff-sans-cond text-accent letter-spacing-2"
-        >
-          {data[1].title}
-        </button>
-        <button
-          onClick={() => handleClick(2)}
-          aria-current="false"
-          className="uppercase ff-sans-cond text-accent letter-spacing-2"
-        >
-          {data[2].title}
-        </button>
-        <button
-          onClick={() => handleClick(3)}
-          aria-current="false"
-          className="uppercase ff-sans-cond text-accent letter-spacing-2"
-        >
-          {data[3].title}
-        </button>
+        {projects.map((project) => (
+          <button
+            key={project.id}
+            id={project.id}
+            onClick={() => handleClick(project.id)}
+            aria-current={project.isCurrent}
+            className="uppercase ff-sans-cond text-accent letter-spacing-2"
+          >
+            {project.title}
+          </button>
+        ))}
       </div>
 
       <article className="destination-info flow flow-space--small">
         <h2 className="fs-800 uppercase ff-serif">
-          {data[currentProject].title}
+          {projects[currentProject].title}
         </h2>
 
-        <p>{data[currentProject].description}</p>
+        <p>{projects[currentProject].description}</p>
 
         <div className="destination-meta flex">
           <div>

@@ -39,7 +39,7 @@ const About = () => {
       <article className="crew-details flow">
         <header className="flow flow-space--small">
           <h2 className="fs-600 ff-serif uppercase">BCS.</h2>
-          <p className="fs-700 uppercase ff-serif text-accent">Heved Ridel</p>
+          <p className="fs-700 uppercase ff-serif text-accent">Heved Ríos</p>
         </header>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste
