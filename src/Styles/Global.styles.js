@@ -337,6 +337,7 @@ select {
 }
 
 .tab-list {
+  overflow-x: auto;
   gap: 2rem;
 }
 

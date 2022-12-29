@@ -24,7 +24,7 @@ const Portfolio = () => {
 
       <div className="tab-list underline-indicators flex">
         <button className="active uppercase ff-sans-cond text-accent letter-spacing-2">
-          bajo◽la musica
+          bajo•la musica
         </button>
         <button className="uppercase ff-sans-cond text-accent letter-spacing-2">
           Xperimental Sounds
