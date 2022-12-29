@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
 import AppContext from "../Context/AppContext";
 import { GridContainerServices } from "../Styles/About.styles";
-import douglasHurley from "../Assets/About-Page/image-douglas-hurley.webp";
+import hevedMoto from "../Assets/About/heved-moto.png";
 
 const About = () => {
   const { setBgImage, setAboutActive } = useContext(AppContext);
@@ -49,7 +49,7 @@ const About = () => {
         </p>
       </article>
 
-      <img src={douglasHurley} alt="Douglas Hurley" />
+      <img src={hevedMoto} alt="Heved in motorcycle" />
     </GridContainerServices>
   );
 };
