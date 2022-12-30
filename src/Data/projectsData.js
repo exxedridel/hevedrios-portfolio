@@ -13,7 +13,7 @@ const data = [
   },
   {
     id: "1",
-    title: "Dank Apps",
+    title: "Set Apps",
     subtitle: "Portfolio - Heved Ríos",
     linkName: "https://hevedrios.netlify.app",
     linkUrl: "https://hevedrios.netlify.app",
