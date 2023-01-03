@@ -75,7 +75,11 @@ export const ButtonPill = styled.button`
     padding: 6px 20px 4px;
     border-radius: 16px;
     /* aspect-ratio: 1; */
+  }
+
+  & a {
     text-decoration: none;
+    color: black;
   }
 
   &::after {
