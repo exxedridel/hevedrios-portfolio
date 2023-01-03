@@ -46,3 +46,57 @@ export const ButtonLarge = styled.div`
     }
   }
 `;
+
+export const ButtonPill = styled.button`
+  /* & {
+    position: relative;
+    z-index: 1;
+    background-color: hsl(var(--clr-white));
+    font-size: var(--fs-200);
+    border: none;
+    color: black;
+    padding: 6px 20px 3px;
+    place-items: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  } */
+
+  & {
+    background-color: hsl(var(--clr-white) / 0.9);
+    font-size: var(--fs-200);
+    position: relative;
+    z-index: 1;
+    display: inline-grid;
+    min-width: 23ch;
+    place-items: center;
+    padding: 6px 20px 4px;
+    border-radius: 16px;
+    /* aspect-ratio: 1; */
+    text-decoration: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: hsl(var(--clr-white) / 0.1);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 500ms linear, transform 750ms ease-in-out;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+`;

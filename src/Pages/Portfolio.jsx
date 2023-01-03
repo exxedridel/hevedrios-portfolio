@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import AppContext from "../Context/AppContext";
 import { GridContainerPortfolio } from "../Styles/Portfolio.styles";
+import { ButtonPill } from "../Styles/Button.styles";
 import projects from "../Data/projectsData";
 
 const Portfolio = () => {
@@ -54,12 +56,10 @@ const Portfolio = () => {
 
         <div className="destination-meta flex">
           <div>
-            <h3 className="text-accent fs-200 uppercase">Go to page</h3>
-            <p className="ff-serif uppercase">button</p>
+            <ButtonPill className="ff-serif uppercase">Go to page</ButtonPill>
           </div>
           <div>
-            <h3 className="text-accent fs-200 uppercase">Checkout code</h3>
-            <p className="ff-serif uppercase">button</p>
+            <ButtonPill className="ff-serif uppercase">Checkout code</ButtonPill>
           </div>
         </div>
       </article>
