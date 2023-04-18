@@ -18,7 +18,7 @@ const About = () => {
   return (
     <GridContainerServices as="main" className="flow">
       <h1 className="numbered-title">
-        <span aria-hidden="true">03</span> how I am
+        <span aria-hidden="true">03</span> Who I Am
       </h1>
 
       <div className="dot-indicators flex">

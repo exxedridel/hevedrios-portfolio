@@ -16,7 +16,7 @@ const Services = () => {
 
   return (
     <Container>
-      <h2 className="ff-serif">Dank Apps</h2>
+      <h2 className="ff-serif">Setapps.co</h2>
     </Container>
   );
 };
