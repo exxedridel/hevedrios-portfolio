@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import AppContext from "../Context/AppContext";
-import { GridContainerServices } from "../Styles/About.styles";
+import { GridContainerAbout } from "../Styles/About.styles";
 import hevedMoto from "../Assets/About/heved-moto.png";
 
 const About = () => {
@@ -16,9 +16,9 @@ const About = () => {
   }, []);
 
   return (
-    <GridContainerServices as="main" className="flow">
+    <GridContainerAbout as="main" className="flow">
       <h1 className="numbered-title">
-        <span aria-hidden="true">03</span> Who I Am
+        <span aria-hidden="true">03</span>Who I Am
       </h1>
 
       <div className="dot-indicators flex">
@@ -50,7 +50,7 @@ const About = () => {
       </article>
 
       <img src={hevedMoto} alt="Heved in motorcycle" />
-    </GridContainerServices>
+    </GridContainerAbout>
   );
 };
 

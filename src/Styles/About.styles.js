@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { GridContainer } from "./Container.styles";
 
-export const GridContainerServices = styled(GridContainer)`
+export const GridContainerAbout = styled(GridContainer)`
   --flow-space: 2rem;
   grid-template-areas:
     "title"
@@ -41,7 +41,7 @@ export const GridContainerServices = styled(GridContainer)`
 
     .numbered-title {
       justify-self: start;
-      margin-top: 2rem;
+      margin-top: 0.35rem;
     }
   }
 
@@ -52,8 +52,9 @@ export const GridContainerServices = styled(GridContainer)`
       ". tabs image .";
 
     & > img {
-      max-width: 90%;
-      /* align-self: end; */
+      max-width: 100%;
+      max-height: auto;
+      // align-self: end;
     }
 
     & > .dot-indicators {

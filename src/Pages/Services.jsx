@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import AppContext from "../Context/AppContext";
-import { Container } from "../Styles/Container.styles";
+import { GridContainerServices } from "../Styles/Services.styles";
 
 const Services = () => {
   const { setBgImage, setServicesActive } = useContext(AppContext);
@@ -15,9 +15,11 @@ const Services = () => {
   }, []);
 
   return (
-    <Container>
-      <h2 className="ff-serif">Setapps.co</h2>
-    </Container>
+    <GridContainerServices>
+      <h1 className="numbered-title">
+        <span aria-hidden="true">02</span>Full Stack Web Development
+      </h1>
+    </GridContainerServices>
   );
 };
 
