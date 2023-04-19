@@ -39,7 +39,7 @@ const Portfolio = () => {
             id={project.id}
             onClick={() => handleClick(project.id)}
             aria-current={project.isCurrent}
-            className="uppercase ff-sans-cond text-accent letter-spacing-2"
+            className="uppercase ff-sans-cond text-accent"
           >
             {project.title}
           </button>

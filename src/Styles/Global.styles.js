@@ -30,11 +30,11 @@ export const GlobalStyles = createGlobalStyle`
 
   /* font-sizes */
   --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
-  --fs-800: 3.5rem;
+  --fs-800: 3rem;
   --fs-700: 1.5rem;
   --fs-600: 1rem;
   --fs-500: 1.75rem;
-  --fs-400: 0.9375rem;
+  --fs-400: 0.9rem;
   --fs-300: 1rem;
   --fs-200: 0.875rem;
 
@@ -47,7 +47,7 @@ export const GlobalStyles = createGlobalStyle`
 /* tablet */
 @media (min-width: 35em) {
   :root {
-    --fs-800: 5rem;
+    --fs-800: 4.2rem;
     --fs-700: 2.5rem;
     --fs-600: 1.5rem;
     --fs-400: 1rem;
@@ -57,12 +57,17 @@ export const GlobalStyles = createGlobalStyle`
 /* desktop */
 @media (min-width: 45em) {
   :root {
-    --fs-800: 6.25rem;
     --fs-700: 3.5rem;
     --fs-600: 2rem;
     --fs-400: 1.125rem;
   }
 }
+@media (min-width: 55em)  {
+  :root {
+    --fs-800: clamp(1rem, 4.2vw + 1rem, 4.5rem);
+  }
+}
+
 
 /* -------------------------------------------- */
 /*                Reset as in:                  */
@@ -338,7 +343,12 @@ select {
 
 .tab-list {
   overflow-x: auto;
-  gap: 2rem;
+  gap: 1.5rem;
+}
+@media  (min-width: 60em) {
+  .tab-list {
+    gap: 2rem;
+  }
 }
 
 .dot-indicators > * {

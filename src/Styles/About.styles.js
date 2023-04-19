@@ -33,6 +33,7 @@ export const GridContainerAbout = styled(GridContainer)`
 
   @media (min-width: 35em) {
     padding-bottom: 0;
+    padding-top: 2rem;
     grid-template-areas:
       "title"
       "content"
@@ -41,11 +42,11 @@ export const GridContainerAbout = styled(GridContainer)`
 
     .numbered-title {
       justify-self: start;
-      margin-top: 0.35rem;
     }
   }
 
   @media (min-width: 55em) {
+    padding-top: 0.35rem;
     grid-template-areas:
       ". title title ."
       ". content image ."

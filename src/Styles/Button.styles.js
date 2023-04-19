@@ -7,7 +7,7 @@ export const ButtonLarge = styled.div`
     z-index: 1;
     display: inline-grid;
     place-items: center; /* shorthand for justify and align items */
-    padding: 0 1em;
+    padding: 0 0.7em;
     border-radius: 50%;
     aspect-ratio: 1;
     text-decoration: none;
@@ -37,12 +37,12 @@ export const ButtonLarge = styled.div`
 
   @media (min-width: 35em) {
     .large-button {
-      padding: 0 1.5em;
+      padding: 0 1.2em;
     }
   }
-  @media (min-width: 45em) {
+  @media (min-width: 55em) {
     .large-button {
-      padding: 0 2em;
+      padding: 0 1.7em;
     }
   }
 `;

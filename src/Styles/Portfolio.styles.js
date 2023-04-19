@@ -20,6 +20,9 @@ export const GridContainerPortfolio = styled(GridContainer)`
 
   & > .tab-list {
     grid-area: tabs;
+    & button {
+      letter-spacing: 1.3px;
+    }
   }
 
   & > .destination-info {

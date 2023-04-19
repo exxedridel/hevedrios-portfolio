@@ -19,7 +19,7 @@ export const GridContainerServices = styled(GridContainer)`
 
   @media (min-width: 55em) {
     justify-items: start;
-    align-content: start;
+    
     grid-template-areas:
       ". title title .";
   }
