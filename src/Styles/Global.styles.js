@@ -365,7 +365,7 @@ select {
 }
 
 .dot-indicators > .active,
-.dot-indicators > [aria-selected="true"] {
+.dot-indicators > [aria-current="true"] {
   background-color: hsl(var(--clr-white) / 1);
 }
 

@@ -9,7 +9,7 @@ const data = [
     description:
       "This is the web app I delivered to Manufacturera San Roque™ as result of my professional practices, which is an employee management system plus rewards store. This one was developed in Python's Flask framework and SQLite as database. User Interface was created using Bootstrap. You can use this credentials to full navigate - user: Heved123, password: 123456.",
     projectUrl: "https://github.com/exxedridel/SanRoquePJ",
-    isCurrent: false,
+    isCurrent: true,
   },
   {
     id: "1",
@@ -21,7 +21,7 @@ const data = [
     description:
       "This will be the official Bajo la Musica™ web app in which local artists can get their music to know. Website is been created using React framework and will escalate into a React Native App. Navbar was created following a Figma wireframe but all other UI/UX by myself. This project is on a test phase to be released soon.",
     projectUrl: "https://github.com/exxedridel/BajoLaMusicaPJ",
-    isCurrent: true,
+    isCurrent: false,
   },
   {
     id: "2",
