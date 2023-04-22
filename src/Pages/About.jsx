@@ -1,12 +1,12 @@
 import { useContext, useEffect, useState } from "react";
 import AppContext from "../Context/AppContext";
-import cv from "../Assets/About/heved-moto.png";
-import degree from "../Assets/Home/background-keys-mobile.jpg";
-import frontend from "../Assets/Home/background-keys-tablet.jpg";
-import english from "../Assets/Home/background-keys-desktop.jpg";
-
-import { GridContainerAbout } from "../Styles/About.styles";
+import cv from "../Assets/About/hevedMoto-noBg-circle.png";
+import degree from "../Assets/About/hevedMoto-noBg-circle.png";
+import frontend from "../Assets/About/hevedMoto-noBg-circle.png";
+import english from "../Assets/About/hevedMoto-noBg-circle.png";
 import tabsData from "../Data/aboutData";
+import { GridContainerAbout } from "../Styles/About.styles";
+import { ButtonPill } from "../Styles/Button.styles";
 
 const About = () => {
   const { setBgImage, setAboutActive } = useContext(AppContext);
@@ -23,7 +23,6 @@ const About = () => {
 
   function handleClick(index) {
     setCurrentTab(index);
-    console.log(tabsData[currentTab].isCurrent)
     document
       .querySelector('[aria-current="true"]')
       .setAttribute("aria-current", false);
@@ -31,7 +30,6 @@ const About = () => {
   }
 
   function getImageUrl(index) {
-    console.log(index);
     switch (index) {
       case "0":
         return cv;
@@ -83,8 +81,11 @@ const About = () => {
             <p className="fs-700 uppercase ff-serif text-accent">{tabsData[currentTab].title}</p>
           </header>
           <p>
-          {tabsData[currentTab].description}
+            {tabsData[currentTab].description}
           </p>
+          <ButtonPill className="ff-serif uppercase">
+            <a href={tabsData[currentTab].linkUrl}>{tabsData[currentTab].linkName}</a>
+            </ButtonPill>
         </article>
 
         <img src={getImageUrl(tabsData[currentTab].id)} alt="Heved in motorcycle" />

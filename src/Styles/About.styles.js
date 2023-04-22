@@ -15,8 +15,9 @@ export const GridContainerAbout = styled(GridContainer)`
 
   & > img {
     grid-area: image;
-    max-width: 60%;
-    border-bottom: 1px solid hsl(var(--clr-white) / 0.1);
+    max-width: 85%;
+    border: 1px solid hsl(var(--clr-white) / 0.1);
+    border-radius: 50%;
   }
 
   & > .dot-indicators {
@@ -43,6 +44,10 @@ export const GridContainerAbout = styled(GridContainer)`
     .numbered-title {
       justify-self: start;
     }
+
+    & > img {
+      max-width: 60%;
+    }
   }
 
   @media (min-width: 55em) {
@@ -55,7 +60,7 @@ export const GridContainerAbout = styled(GridContainer)`
     & > img {
       max-width: 100%;
       max-height: auto;
-      // align-self: end;
+      align-self: start;
     }
 
     & > .dot-indicators {
