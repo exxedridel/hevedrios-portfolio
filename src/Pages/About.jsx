@@ -91,7 +91,7 @@ const About = () => {
             {tabsData[currentTab].description}
           </p>
           <ButtonPill className="ff-serif uppercase">
-            <a href={getPdfUrl(tabsData[currentTab].id)} target="_blank">{tabsData[currentTab].linkName}</a>
+            <a href={getPdfUrl(tabsData[currentTab].id)} target="_blank" rel="noreferrer">{tabsData[currentTab].linkName}</a>
           </ButtonPill>
         </article>
 
