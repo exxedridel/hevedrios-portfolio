@@ -16,7 +16,7 @@ export const GridContainerAbout = styled(GridContainer)`
   & > img {
     grid-area: image;
     max-width: 85%;
-    border: 1px solid hsl(var(--clr-white) / 0.1);
+    border: 2px solid hsl(var(--clr-white) / 0.3);
     border-radius: 50%;
   }
 
