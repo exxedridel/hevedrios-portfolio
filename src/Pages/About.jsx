@@ -1,8 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import AppContext from "../Context/AppContext";
+import bcsPdf from '../Assets/About/bcs-certificate.pdf';
 import cv from "../Assets/About/hevedMoto-noBg-circle.png";
 import degree from "../Assets/About/hevedMoto-noBg-circle.png";
-import frontend from "../Assets/About/hevedMoto-noBg-circle.png";
+import frontend from "../Assets/About/frontend.png";
 import english from "../Assets/About/hevedMoto-noBg-circle.png";
 import tabsData from "../Data/aboutData";
 import { GridContainerAbout } from "../Styles/About.styles";
@@ -44,6 +45,21 @@ const About = () => {
     }
   }
 
+  function getPdfUrl(index) {
+    switch (index) {
+      case "0":
+        return bcsPdf;
+      case '1':
+        return bcsPdf;
+      case '2':
+        return "https://scrimba.com/certificate/uwEkgLsV/gfrontend";
+      case '3':
+        return "https://scrimba.com/certificate/uwEkgLsV/gfrontend";
+      default:
+        return '';
+    }
+  }
+
   return (
     <>
       <GridContainerAbout as="main" className="flow">
@@ -64,15 +80,6 @@ const About = () => {
               </button>
             ))
           }
-          {/* <button>
-            <span className="sr-only">Front-end certificate</span>
-          </button>
-          <button>
-            <span className="sr-only">English certificate</span>
-          </button>
-          <button>
-            <span className="sr-only">Curriculum Vitae</span>
-          </button> */}
         </div>
 
         <article className="crew-details flow">
@@ -84,14 +91,12 @@ const About = () => {
             {tabsData[currentTab].description}
           </p>
           <ButtonPill className="ff-serif uppercase">
-            <a href={tabsData[currentTab].linkUrl}>{tabsData[currentTab].linkName}</a>
-            </ButtonPill>
+            <a href={getPdfUrl(tabsData[currentTab].id)} target="_blank">{tabsData[currentTab].linkName}</a>
+          </ButtonPill>
         </article>
 
         <img src={getImageUrl(tabsData[currentTab].id)} alt="Heved in motorcycle" />
       </GridContainerAbout>
-
-
     </>
   );
 };
