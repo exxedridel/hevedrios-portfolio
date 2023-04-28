@@ -4,7 +4,7 @@ import bcsPdf from '../Assets/About/bcs-certificate.pdf';
 import cv from "../Assets/About/hevedMoto-noBg-circle.png";
 import degree from "../Assets/About/computer-fixed.jpg";
 import frontend from "../Assets/About/frontend-fixed.png";
-import english from "../Assets/About/hevedMoto-noBg-circle.png";
+import english from "../Assets/About/english-cert.png";
 import tabsData from "../Data/aboutData";
 import { GridContainerAbout } from "../Styles/About.styles";
 import { ButtonPill } from "../Styles/Button.styles";
@@ -54,7 +54,7 @@ const About = () => {
       case '2':
         return "https://scrimba.com/certificate/uwEkgLsV/gfrontend";
       case '3':
-        return "https://scrimba.com/certificate/uwEkgLsV/gfrontend";
+        return "https://www.efset.org/cert/XW34kF";
       default:
         return '';
     }
