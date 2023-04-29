@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
-import bgHomeMobile from "../Assets/Home/background-keys-mobile.jpg";
-import bgHomeTablet from "../Assets/Home/background-keys-tablet.jpg";
-import bgHomeDesktop from "../Assets/Home/background-keys-desktop.jpg";
+import bgHomeMobile from "../Assets/Home/background-keys-mobileauto-0brigthness-dramatic.jpg";
+import bgHomeTablet from "../Assets/Home/background-keys-tablet-auto-0brigthness-dramatic.jpg";
+import bgHomeDesktop from "../Assets/Home/background-keys-desktop-auto-0brigthness-dramatic.jpg";
 import bgOtherMobile from "../Assets/Shared/subtle_carbon.webp";
 
 export const BodyContainer = styled.div`
@@ -165,9 +165,11 @@ select {
     background-image: url(${bgHomeDesktop});
   }
 }
+
 /* Other */
 .bgImageOther {
-  /* background-size: cover; */
+  background-size: 65%;
+  background-repeat: repeat;
   background-position: bottom center;
   background-image: url(${bgOtherMobile});
 }

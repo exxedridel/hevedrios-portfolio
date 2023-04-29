@@ -3,6 +3,7 @@ import { GridContainer } from "./Container.styles";
 
 export const GridContainerAbout = styled(GridContainer)`
   --flow-space: 2rem;
+  backdrop-filter: blur(5px);
   grid-template-areas:
     "title"
     "image"
@@ -13,26 +14,28 @@ export const GridContainerAbout = styled(GridContainer)`
     grid-area: title;
   }
 
-  & > img {
+  img {
     grid-area: image;
     max-width: 85%;
-    border: 2px solid hsl(var(--clr-white) / 0.3);
+    border: 3px solid hsl(var(--clr-white) / 0.4);
     border-radius: 50%;
   }
 
-  & > .dot-indicators {
+  .dot-indicators {
     grid-area: tabs;
+    
   }
 
-  & > .crew-details {
+  .about-details {
     grid-area: content;
   }
 
-  .crew-details h2 {
-    opacity: .5;
+  .about-details h2 {
+    opacity: .6;
   }
 
   @media (min-width: 35em) {
+    backdrop-filter: blur(2px);
     padding-bottom: 0;
     padding-top: 2rem;
     grid-template-areas:

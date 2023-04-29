@@ -14,7 +14,7 @@ const About = () => {
   const [currentTab, setCurrentTab] = useState(0);
 
   useEffect(() => {
-    setBgImage("bgImageOther");
+    setBgImage("bgImageHome");
     setAboutActive("active");
     return function () {
       setAboutActive("");
@@ -82,7 +82,7 @@ const About = () => {
           }
         </div>
 
-        <article className="crew-details flow">
+        <article className="about-details flow">
           <header className="flow flow-space--small">
             <h2 className="fs-600 ff-serif uppercase">{tabsData[currentTab].subtitle}</h2>
             <p className="fs-700 uppercase ff-serif text-accent">{tabsData[currentTab].title}</p>
