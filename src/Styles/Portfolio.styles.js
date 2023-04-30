@@ -3,6 +3,7 @@ import { GridContainer } from "./Container.styles";
 
 export const GridContainerPortfolio = styled(GridContainer)`
   --flow-space: 2rem;
+
   grid-template-areas:
     "title"
     "image"

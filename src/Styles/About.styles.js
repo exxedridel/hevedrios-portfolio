@@ -17,8 +17,10 @@ export const GridContainerAbout = styled(GridContainer)`
   img {
     grid-area: image;
     max-width: 85%;
-    border: 3px solid hsl(var(--clr-white) / 0.4);
+    border: 2px solid hsl(var(--clr-white) / 1);
     border-radius: 50%;
+    background-color: hsl(var(--clr-crimson) /0.6);
+    
   }
 
   .dot-indicators {
@@ -35,7 +37,7 @@ export const GridContainerAbout = styled(GridContainer)`
   }
 
   @media (min-width: 35em) {
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(0px);
     padding-bottom: 0;
     padding-top: 2rem;
     grid-template-areas:
@@ -60,13 +62,13 @@ export const GridContainerAbout = styled(GridContainer)`
       ". content image ."
       ". tabs image .";
 
-    & > img {
+    img {
       max-width: 100%;
       max-height: auto;
       align-self: start;
     }
 
-    & > .dot-indicators {
+    .dot-indicators {
       justify-self: start;
     }
   }

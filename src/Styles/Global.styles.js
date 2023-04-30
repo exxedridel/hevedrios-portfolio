@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from "styled-components";
 import bgHomeMobile from "../Assets/Home/background-keys-mobileauto-0brigthness-dramatic.jpg";
 import bgHomeTablet from "../Assets/Home/background-keys-tablet-auto-0brigthness-dramatic.jpg";
 import bgHomeDesktop from "../Assets/Home/background-keys-desktop-auto-0brigthness-dramatic.jpg";
-import bgOtherMobile from "../Assets/Shared/subtle_carbon.webp";
+import bgOtherMobile from "../Assets/Shared/background-portfolio.jpg";
 
 export const BodyContainer = styled.div`
   min-height: 100vh;
@@ -168,11 +168,30 @@ select {
 
 /* Other */
 .bgImageOther {
-  background-size: 65%;
-  background-repeat: repeat;
-  background-position: bottom center;
+  background-size: 260%;
+  background-repeat: no-repeat;
+  background-position: top center;
   background-image: url(${bgOtherMobile});
 }
+
+@media (min-width: 35rem) {
+  .bgImageOther {
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url(${bgOtherMobile});
+  }
+}
+
+@media (min-width: 55rem) {
+  .bgImageOther {
+    background-size: 1900px;
+    background-repeat: no-repeat;
+    background-position-y: 275%;
+    background-image: url(${bgOtherMobile});
+  }
+}
+
 
 /* ------------------- */
 /* Utility classes     */

@@ -6,7 +6,7 @@ const Services = () => {
   const { setBgImage, setServicesActive } = useContext(AppContext);
 
   useEffect(() => {
-    setBgImage("bgImageOther");
+    setBgImage("bgImageHome");
     setServicesActive("active");
     return function () {
       setServicesActive("");
