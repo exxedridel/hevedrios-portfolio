@@ -33,7 +33,7 @@ const Header = () => {
          <SkipToContent onClick={mainFocus}>Skip to content</SkipToContent>
          <HeaderStyled className="primary-header flex" ref={refMenu}>
             <div>
-               <Logo src={logo} alt="Heved logo" />
+            <Link to="/"><Logo src={logo} alt="Heved logo" /></Link>
             </div>
             <button className="mobile-nav-toggle" onClick={toggleClick} style={iconMenu} aria-controls="primary-navigation">
                <span className="sr-only" aria-expanded={toggle}>Menu</span>

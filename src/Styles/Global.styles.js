@@ -336,7 +336,7 @@ select {
 .numbered-title span {
   margin-right: 0.5em;
   font-weight: 700;
-  color: hsl(var(--clr-white) / 0.25);
+  color: hsl(var(--clr-white) / 0.5);
 }
 
 /* - - - - - - - */

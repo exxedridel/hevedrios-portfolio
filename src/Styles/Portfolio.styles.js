@@ -17,6 +17,7 @@ export const GridContainerPortfolio = styled(GridContainer)`
   & > img {
     grid-area: image;
     max-width: 60%;
+    border-bottom: 1px solid hsl(var(--clr-white) / 0.1);
   }
 
   & > .tab-list {
@@ -33,8 +34,8 @@ export const GridContainerPortfolio = styled(GridContainer)`
   .destination-meta {
     flex-direction: column;
     border-top: 1px solid hsl(var(--clr-white) / 0.1);
-    padding-top: 2.5rem;
-    margin-top: 2.5rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
   }
 
   .destination-meta p {

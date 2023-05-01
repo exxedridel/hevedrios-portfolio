@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import AppContext from "../Context/AppContext";
 import { GridContainerPortfolio } from "../Styles/Portfolio.styles";
 import { ButtonPill } from "../Styles/Button.styles";
+import xperimental from "../Assets/Portfolio/xperishit.png"
 import projects from "../Data/projectsData";
 
 const Portfolio = () => {
@@ -17,6 +18,21 @@ const Portfolio = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  function getImageUrl(index) {
+    switch (index) {
+      case "0":
+        return xperimental;
+      case '1':
+        return xperimental;
+      case '2':
+        return xperimental;
+      case '3':
+        return xperimental;
+      default:
+        return '';
+    }
+  }
+
   function handleClick(index) {
     setCurrentProject(index);
     document
@@ -30,7 +46,7 @@ const Portfolio = () => {
       <h1 className="numbered-title">
         <span aria-hidden="true">01</span>Select a project
       </h1>
-      <img src={projects[currentProject].image} alt="Current project" />
+      <img src={getImageUrl(projects[currentProject].id)} alt="Current project" />
 
       <div className="tab-list underline-indicators flex">
         {projects.map((project) => (
