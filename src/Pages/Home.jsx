@@ -21,14 +21,11 @@ const Home = () => {
       <GridContainerHome as="main">
         <div>
           <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">
-            Web engineer - designer
+            FRONT-END UX Developer
             <span className="d-block fs-900 ff-serif text-white">Heved</span>
           </h1>
           <p>
-            A front-end developer with specialty in React libraries, which means
-            I'm capable of developing the interface and user experience of a
-            variety of web projects swimmingly plus adding value through the visuals
-            and aesthetic, check out my current work!
+            As an agile developer with expertise in React libraries, I am capable of developing the interface and user experience of web projects smoothly. Additionally, I can add value through compelling visuals and aesthetics. Please take a look at my current work!
           </p>
         </div>
         <ButtonLarge>

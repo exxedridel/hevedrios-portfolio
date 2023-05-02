@@ -3,7 +3,7 @@ import AppContext from "../Context/AppContext";
 import bcsPdf from '../Assets/About/bcs-certificate.pdf';
 import cv from "../Assets/About/hevedMoto-noBg-circle.png";
 import degree from "../Assets/About/computer-fixed.jpg";
-import frontend from "../Assets/About/frontend-fixed.png";
+import frontend from "../Assets/About/scrimbashit.png";
 import english from "../Assets/About/english-cert.png";
 import tabsData from "../Data/aboutData";
 import { GridContainerAbout } from "../Styles/About.styles";

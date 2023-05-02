@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
-import bgHomeMobile from "../Assets/Home/background-keys-mobileauto-0brigthness-dramatic.jpg";
+import bgHomeMobile from "../Assets/Home/background-keys-mobile.jpg";
 import bgHomeTablet from "../Assets/Home/background-keys-tablet-auto-0brigthness-dramatic.jpg";
 import bgHomeDesktop from "../Assets/Home/background-keys-desktop-auto-0brigthness-dramatic.jpg";
 import bgOtherMobile from "../Assets/Shared/background-portfolio.jpg";
@@ -336,7 +336,7 @@ select {
 .numbered-title span {
   margin-right: 0.5em;
   font-weight: 700;
-  color: hsl(var(--clr-white) / 0.5);
+  color: hsl(var(--clr-white) / 0.6);
 }
 
 /* - - - - - - - */

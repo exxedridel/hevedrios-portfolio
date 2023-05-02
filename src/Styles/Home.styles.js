@@ -25,6 +25,11 @@ export const GridContainerHome = styled(GridContainer)`
       padding-bottom: max(6rem, 20vh);
       align-items: end;
     }
+
+    .d-block {
+      margin-left: calc(-2px - 0.7vmin);
+    }
+
     & > *:first-child {
       grid-column: 2;
     }

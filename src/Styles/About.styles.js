@@ -3,7 +3,7 @@ import { GridContainer } from "./Container.styles";
 
 export const GridContainerAbout = styled(GridContainer)`
   --flow-space: 2rem;
-  background-color: hsl(var(--clr-dark) /0.15);
+  background-color: hsl(var(--clr-dark) /0.5);
   backdrop-filter: blur(4px);
   grid-template-areas:
     "title"
@@ -38,6 +38,7 @@ export const GridContainerAbout = styled(GridContainer)`
   }
 
   @media (min-width: 35em) {
+    background-color: transparent;
     backdrop-filter: blur(0px);
     padding-bottom: 0;
     padding-top: 2rem;

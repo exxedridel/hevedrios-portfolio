@@ -2,7 +2,10 @@ import { useContext, useEffect, useState } from "react";
 import AppContext from "../Context/AppContext";
 import { GridContainerPortfolio } from "../Styles/Portfolio.styles";
 import { ButtonPill } from "../Styles/Button.styles";
-import xperimental from "../Assets/Portfolio/xperishit.png"
+import xperimental from "../Assets/Portfolio/xperishit.png";
+import bajolamusic from "../Assets/Portfolio/bajolashit.png";
+import setapps from "../Assets/Portfolio/setappshit.png";
+import hevedrios from "../Assets/Portfolio/hevedshit.png";
 import projects from "../Data/projectsData";
 
 const Portfolio = () => {
@@ -23,11 +26,11 @@ const Portfolio = () => {
       case "0":
         return xperimental;
       case '1':
-        return xperimental;
+        return bajolamusic;
       case '2':
-        return xperimental;
+        return setapps;
       case '3':
-        return xperimental;
+        return hevedrios;
       default:
         return '';
     }
@@ -77,7 +80,7 @@ const Portfolio = () => {
           </div>
           <div>
             <ButtonPill className="ff-serif uppercase">
-            <a href={projects[currentProject].projectUrl}>Checkout code</a>
+            <a href={projects[currentProject].projectUrl}>Check out code</a>
             </ButtonPill>
           </div>
         </div>

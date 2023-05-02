@@ -17,7 +17,7 @@ export const GridContainerPortfolio = styled(GridContainer)`
   & > img {
     grid-area: image;
     max-width: 60%;
-    border-bottom: 1px solid hsl(var(--clr-white) / 0.1);
+    border: 1px solid hsl(var(--clr-white) / 0.2);
   }
 
   & > .tab-list {
