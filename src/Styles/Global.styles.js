@@ -375,7 +375,7 @@ select {
 .dot-indicators > * {
   cursor: pointer;
   border: 0;
-  padding: 0.5em;
+  padding: 0.7em;
   border-radius: 50%;
   background-color: hsl(var(--clr-white) / 0.25);
 }

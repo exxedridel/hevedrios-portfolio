@@ -3,7 +3,7 @@ const data1 = [
         id: "0",
         title: "Heved Ríos Delgado",
         subtitle: "BCS.",
-        linkName: "Curriculum",
+        linkName: "Resume",
         description:
             "Correct! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste unde, eveniet ex cum pariatur earum magni hic accusantium eos exercitationem beatae nostrum voluptatibus praesentium aliquid atque sit id totam.",
         isCurrent: true,
@@ -28,7 +28,7 @@ const data1 = [
     },
     {
         id: "3",
-        title: "C1 English Qualified",
+        title: "C2 English Qualified",
         subtitle: "EF SET",
         linkName: "Certificate",
         description:

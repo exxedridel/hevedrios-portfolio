@@ -26,7 +26,7 @@ export const GridContainerAbout = styled(GridContainer)`
 
   .dot-indicators {
     grid-area: tabs;
-    
+    --gap: 1.7rem;
   }
 
   .about-details {
