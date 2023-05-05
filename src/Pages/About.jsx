@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import AppContext from "../Context/AppContext";
-import bcsPdf from '../Assets/About/bcs-certificate.pdf';
+import hevedResume from "../Assets/About/heved-resume.pdf";
+import bcsPdf from "../Assets/About/bcs-certificate.pdf";
 import cv from "../Assets/About/hevedMoto-noBg-circle.png";
 import degree from "../Assets/About/bcs-cert.png";
 import frontend from "../Assets/About/scrimba-cert.png";
@@ -48,7 +49,7 @@ const About = () => {
   function getPdfUrl(index) {
     switch (index) {
       case "0":
-        return bcsPdf;
+        return hevedResume;
       case '1':
         return bcsPdf;
       case '2':
