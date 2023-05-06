@@ -2,9 +2,9 @@ import { useContext, useEffect, useState } from "react";
 import AppContext from "../Context/AppContext";
 import hevedResume from "../Assets/About/heved-resume.pdf";
 import bcsPdf from "../Assets/About/bcs-certificate.pdf";
-import cv from "../Assets/About/hevedMoto-noBg-circle.png";
+import profilePhoto from "../Assets/About/heved-section.png";
 import degree from "../Assets/About/bcs-cert.png";
-import frontend from "../Assets/About/scrimba-cert.png";
+import frontend from "../Assets/About/scrimba-cert2.png";
 import english from "../Assets/About/english-cert.png";
 import tabsData from "../Data/aboutData";
 import { GridContainerAbout } from "../Styles/About.styles";
@@ -34,7 +34,7 @@ const About = () => {
   function getImageUrl(index) {
     switch (index) {
       case "0":
-        return cv;
+        return profilePhoto;
       case '1':
         return degree;
       case '2':

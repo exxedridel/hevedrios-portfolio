@@ -5,7 +5,7 @@ const data1 = [
         subtitle: "BCS.",
         linkName: "Resume",
         description:
-            "Correct! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste unde, eveniet ex cum pariatur earum magni hic accusantium eos exercitationem beatae nostrum voluptatibus praesentium aliquid atque sit id totam.",
+            "A front-end developer with 3 years of experience. I am passionate about learning and implementing modern coding and front-end techniques over my projects. Here is my resume for the details.",
         isCurrent: true,
     },
     {
@@ -14,7 +14,7 @@ const data1 = [
         subtitle: "BACHELOR in",
         linkName: "Certificate",
         description:
-            "Correct! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste unde, eveniet ex cum pariatur earum magni hic accusantium eos exercitationem beatae nostrum voluptatibus praesentium aliquid atque sit id totam.",
+            "I hold a degree in Computer Systems Engineering, which is equivalent to a Bachelor's degree in Computer Science. In addition, I also have a degree in Public Administration, which has allowed me to develop strong soft skills.",
         isCurrent: false,
     },
     {
@@ -23,7 +23,7 @@ const data1 = [
         subtitle: "Scrimba",
         linkName: "Certificate",
         description:
-            "Correct! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste unde, eveniet ex cum pariatur earum magni hic accusantium eos exercitationem beatae nostrum voluptatibus praesentium aliquid atque sit id totam.",
+            "My passion for front-end engineering stems from my love for both mathematics and creating visually appealing designs. I realized early on that I wanted to combine these two interests to build beautiful and functional web applications.",
         isCurrent: false,
     },
     {
