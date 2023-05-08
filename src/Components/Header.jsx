@@ -44,10 +44,10 @@ const Header = () => {
             </button>
             <nav>
                <ul id="primary-navigation" data-visible={toggle} className="primary-navigation underline-indicators flex">
-                  <li className={homeActive} onClick={toggleClick}><Link to="/" className="uppercase ff-sans-cond text-white letter-spacing-2"><span aria-hidden="true">00</span>Home</Link></li>
-                  <li className={portfolioActive} onClick={toggleClick}><Link to="portfolio" className="uppercase ff-sans-cond text-white letter-spacing-2"><span aria-hidden="true">01</span>Portfolio</Link></li>
-                  <li className={servicesActive} onClick={toggleClick}><Link to="services" className="uppercase ff-sans-cond text-white letter-spacing-2"><span aria-hidden="true">02</span>Services</Link></li>
-                  <li className={aboutActive} onClick={toggleClick}><Link to="about" className="uppercase ff-sans-cond text-white letter-spacing-2"><span aria-hidden="true">03</span>About</Link></li>
+                  <Link to="/" className="uppercase ff-sans-cond text-white letter-spacing-2"><li className={homeActive} onClick={toggleClick}><span aria-hidden="true">00</span>Home</li></Link>
+                  <Link to="portfolio" className="uppercase ff-sans-cond text-white letter-spacing-2"><li className={portfolioActive} onClick={toggleClick}><span aria-hidden="true">01</span>Portfolio</li></Link>
+                  <Link to="services" className="uppercase ff-sans-cond text-white letter-spacing-2"><li className={servicesActive} onClick={toggleClick}><span aria-hidden="true">02</span>Services</li></Link>
+                  <Link to="about" className="uppercase ff-sans-cond text-white letter-spacing-2"><li className={aboutActive} onClick={toggleClick}><span aria-hidden="true">03</span>About</li></Link>
                </ul>
             </nav>
          </HeaderStyled>

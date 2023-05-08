@@ -14,7 +14,7 @@ const data1 = [
         subtitle: "Engineer in",
         linkName: "Certificate",
         description:
-            "I hold a degree in Computer Systems Engineering by UTEL, where aquired programing and software development skills. In addition, I also have a degree in Public Administration, which has allowed me to develop strong soft skills.",
+            "I hold a degree in Computer Systems Engineering by UTEL, where aquired my technical and software development skills. In addition, I also have a degree in Public Administration, which has allowed me to develop strong soft skills.",
         isCurrent: false,
     },
     {

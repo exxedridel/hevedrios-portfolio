@@ -2,10 +2,10 @@ import { useContext, useEffect, useState } from "react";
 import AppContext from "../Context/AppContext";
 import { GridContainerPortfolio } from "../Styles/Portfolio.styles";
 import { ButtonPill } from "../Styles/Button.styles";
-import xperimental from "../Assets/Portfolio/xperishit.png";
-import bajolamusic from "../Assets/Portfolio/bajolashit.png";
-import setapps from "../Assets/Portfolio/setappshit.png";
-import hevedrios from "../Assets/Portfolio/hevedshit.png";
+import xperimental from "../Assets/Portfolio/xperimental.png";
+import bajolamusic from "../Assets/Portfolio/bajolamusic.png";
+import setapps from "../Assets/Portfolio/setapps.png";
+import hevedspage from "../Assets/Portfolio/hevedspage.png";
 import projects from "../Data/projectsData";
 
 const Portfolio = () => {
@@ -30,7 +30,7 @@ const Portfolio = () => {
       case '2':
         return setapps;
       case '3':
-        return hevedrios;
+        return hevedspage;
       default:
         return '';
     }
@@ -74,13 +74,15 @@ const Portfolio = () => {
 
         <div className="destination-meta flex">
           <div>
-            <ButtonPill className="ff-serif uppercase">
-              <a href={projects[currentProject].linkUrl}>Go to page</a>
-            </ButtonPill>
+            <a href={projects[currentProject].projectUrl}>
+              <ButtonPill className="ff-serif uppercase">
+                Go to page
+              </ButtonPill>
+            </a>
           </div>
           <div>
             <ButtonPill className="ff-serif uppercase">
-            <a href={projects[currentProject].projectUrl}>Check out code</a>
+              <a href={projects[currentProject].codeUrl}>Check out code</a>
             </ButtonPill>
           </div>
         </div>

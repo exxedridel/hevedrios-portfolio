@@ -40,7 +40,7 @@ export const HeaderStyled = styled.header`
     text-decoration: none;
   }
 
-  .primary-navigation a > span {
+  li > span {
     font-weight: 700;
     margin-right: 0.5em;
   }

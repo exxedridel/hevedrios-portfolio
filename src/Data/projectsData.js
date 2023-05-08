@@ -2,13 +2,10 @@ const data = [
   {
     id: "0",
     title: "XPERIMENTAL SOUNDS",
-    subtitle: "Web App - San Roque™ Employee Manager",
-    linkName: "http://hevedrios.pythonanywhere.com",
-    linkUrl: "http://hevedrios.pythonanywhere.com",
-    image: "https://images2.imgbox.com/90/d6/3IxOtbkv_o.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere consectetur dolor, unde facilis non dignissimos labore obcaecati aliquid reiciendis nisi adipisci animi consequuntur quas recusandae natus harum exercitationem nihil quis. adipisci animi consequuntur quas recusandae natus harum exercitationem nihil quis.",
-    projectUrl: "https://github.com/exxedridel/SanRoquePJ",
+    projectUrl: "https://xperimentalsounds.com",
+    codeUrl: "https://github.com/exxedridel/Xperimental-Sounds",
     isCurrent: true,
   },
   {
@@ -31,7 +28,7 @@ const data = [
     linkUrl: "https://hevedrios.netlify.app",
     image: "https://images2.imgbox.com/70/cb/L6jx4EqV_o.jpg",
     description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere consectetur dolor, unde facilis non dignissimos labore obcaecati aliquid reiciendis nisi adipisci animi consequuntur quas recusandae natus harum exercitationem nihil quis. adipisci animi consequuntur quas recusandae natus harum exercitationem nihil quis.",
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere consectetur dolor, unde facilis non dignissimos labore obcaecati aliquid reiciendis nisi adipisci animi consequuntur quas recusandae natus harum exercitationem nihil quis. adipisci animi consequuntur quas recusandae natus harum exercitationem nihil quis.",
     projectUrl: "https://github.com/exxedridel/my-portfolio",
     isCurrent: false,
   },
@@ -43,7 +40,7 @@ const data = [
     linkUrl: "https://hevedrios.netlify.app",
     image: "https://images2.imgbox.com/70/cb/L6jx4EqV_o.jpg",
     description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere consectetur dolor, unde facilis non dignissimos labore obcaecati aliquid reiciendis nisi adipisci animi consequuntur quas recusandae natus harum exercitationem nihil quis. adipisci animi consequuntur quas recusandae natus harum exercitationem nihil quis.",
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere consectetur dolor, unde facilis non dignissimos labore obcaecati aliquid reiciendis nisi adipisci animi consequuntur quas recusandae natus harum exercitationem nihil quis. adipisci animi consequuntur quas recusandae natus harum exercitationem nihil quis.",
     projectUrl: "https://github.com/exxedridel/my-portfolio",
     isCurrent: false,
   },
