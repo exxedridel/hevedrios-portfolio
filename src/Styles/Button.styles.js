@@ -52,23 +52,9 @@ export const ButtonLarge = styled.div`
 `;
 
 export const ButtonPill = styled.button`
-  /* & {
-    position: relative;
-    z-index: 1;
-    background-color: hsl(var(--clr-white));
-    font-size: var(--fs-200);
-    border: none;
-    color: black;
-    padding: 6px 20px 3px;
-    place-items: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 16px;
-  } */
 
   & {
+    cursor: pointer
     background-color: hsl(var(--clr-white) / 0.9);
     font-size: var(--fs-200);
     position: relative;

@@ -81,9 +81,11 @@ const Portfolio = () => {
             </a>
           </div>
           <div>
-            <ButtonPill className="ff-serif uppercase">
-              <a href={projects[currentProject].codeUrl}>Check out code</a>
-            </ButtonPill>
+            <a href={projects[currentProject].codeUrl}>
+              <ButtonPill className="ff-serif uppercase">
+                Check out code
+              </ButtonPill>
+            </a>
           </div>
         </div>
       </article>

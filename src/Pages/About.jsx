@@ -91,9 +91,14 @@ const About = () => {
           <p>
             {tabsData[currentTab].description}
           </p>
-          <ButtonPill className="ff-serif uppercase">
-            <a href={getPdfUrl(tabsData[currentTab].id)} target="_blank" rel="noreferrer">{tabsData[currentTab].linkName}</a>
-          </ButtonPill>
+
+          <div>
+            <a href={getPdfUrl(tabsData[currentTab].id)} target="_blank" rel="noreferrer">
+              <ButtonPill className="ff-serif uppercase">
+                {tabsData[currentTab].linkName}
+              </ButtonPill>
+            </a>
+          </div>
         </article>
 
         <img src={getImageUrl(tabsData[currentTab].id)} alt="Heved in motorcycle" />

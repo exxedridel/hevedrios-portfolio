@@ -46,6 +46,10 @@ export const GridContainerPortfolio = styled(GridContainer)`
     max-width: 100%;
   }
 
+  .meta-link::hover {
+    cursor: pointer;
+  }
+
   @media (min-width: 35em) {
     .numbered-title {
       justify-self: start;
