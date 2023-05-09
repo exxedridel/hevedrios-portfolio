@@ -15,8 +15,14 @@ export const GridContainerAbout = styled(GridContainer)`
     grid-area: title;
   }
 
-  img {
+  .img-link {
     grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
     max-width: 85%;
     border: 2px solid hsl(var(--clr-white) / 1);
     border-radius: 50%;
@@ -37,6 +43,13 @@ export const GridContainerAbout = styled(GridContainer)`
     opacity: .6;
   }
 
+  .details-link a {
+    text-decoration: none;
+    & > * {
+      color: black;
+    }
+  }
+
   @media (min-width: 35em) {
     background-color: transparent;
     backdrop-filter: blur(0px);
@@ -52,7 +65,7 @@ export const GridContainerAbout = styled(GridContainer)`
       justify-self: start;
     }
 
-    & > img {
+    .img-link img {
       max-width: 60%;
     }
   }
@@ -64,10 +77,13 @@ export const GridContainerAbout = styled(GridContainer)`
       ". content image ."
       ". tabs image .";
 
-    img {
+    .img-link {
+      align-self: start;
+    }
+
+    .img-link img {
       max-width: 100%;
       max-height: auto;
-      align-self: start;
     }
 
     .dot-indicators {

@@ -49,7 +49,7 @@ export const HeaderStyled = styled.header`
     display: none;
   }
 
-  @media (max-width: 35rem) {
+  @media (max-width: 42rem) {
     .primary-navigation {
       --underline-gap: 0.5rem;
       position: fixed;

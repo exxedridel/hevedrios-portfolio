@@ -49,7 +49,10 @@ const Portfolio = () => {
       <h1 className="numbered-title">
         <span aria-hidden="true">01</span>Select a project
       </h1>
-      <img src={getImageUrl(projects[currentProject].id)} alt="Current project" />
+
+      <a className="image-link" href={projects[currentProject].projectUrl}>
+        <img src={getImageUrl(projects[currentProject].id)} alt="Current project" />
+      </a>
 
       <div className="tab-list underline-indicators flex">
         {projects.map((project) => (
@@ -73,14 +76,14 @@ const Portfolio = () => {
         <p>{projects[currentProject].description}</p>
 
         <div className="destination-meta flex">
-          <div>
+          <div className="meta-link">
             <a href={projects[currentProject].projectUrl}>
               <ButtonPill className="ff-serif uppercase">
-                Go to page
+                Go to Website
               </ButtonPill>
             </a>
           </div>
-          <div>
+          <div className="meta-link">
             <a href={projects[currentProject].codeUrl}>
               <ButtonPill className="ff-serif uppercase">
                 Check out code

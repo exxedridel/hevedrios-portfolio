@@ -77,7 +77,7 @@ const About = () => {
                 onClick={() => handleClick(tabdata.id)}
                 aria-current={tabdata.isCurrent}
               >
-                <span className="sr-only">Bachelor of Computer Science</span>
+                <span className="sr-only">{tabsData[currentTab].id}</span>
               </button>
             ))
           }
@@ -92,7 +92,7 @@ const About = () => {
             {tabsData[currentTab].description}
           </p>
 
-          <div>
+          <div className="details-link">
             <a href={getPdfUrl(tabsData[currentTab].id)} target="_blank" rel="noreferrer">
               <ButtonPill className="ff-serif uppercase">
                 {tabsData[currentTab].linkName}
@@ -101,7 +101,9 @@ const About = () => {
           </div>
         </article>
 
-        <img src={getImageUrl(tabsData[currentTab].id)} alt="Heved in motorcycle" />
+        <a className="img-link" href={getPdfUrl(tabsData[currentTab].id)}>
+          <img src={getImageUrl(tabsData[currentTab].id)} alt="Heved in motorcycle" />
+        </a>
       </GridContainerAbout>
     </>
   );

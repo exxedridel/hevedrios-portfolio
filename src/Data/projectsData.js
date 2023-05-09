@@ -30,7 +30,7 @@ const data = [
     id: "3",
     title: "Heved's Portfolio",
     description:
-      "This is my website to showcase my most recent work. It was built using CRA for a fast configuration, and all routing and components were created from scratch. The UI/UX design was also done using styled-components. You can find all of my other projects and exercises on my GitHub profile.",
+      "This is my website to showcase my most recent work. It was built using CRA for a fast configuration but it's going to be migrated to NextJs for better performance. All routing, UI/UX design and components were created from scratch. Layout and components were also done using styled-components.",
     projectUrl: "https://hevedrios.netlify.app",
     codeUrl: "https://github.com/exxedridel/hevedrios-portfolio",
     isCurrent: false,

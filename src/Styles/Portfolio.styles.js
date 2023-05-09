@@ -14,9 +14,15 @@ export const GridContainerPortfolio = styled(GridContainer)`
     grid-area: title;
   }
 
-  & > img {
+  .image-link {
     grid-area: image;
-    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-link img {
+    max-width: 70%;
     border: 1px solid hsl(var(--clr-white) / 0.2);
   }
 
@@ -46,14 +52,21 @@ export const GridContainerPortfolio = styled(GridContainer)`
     max-width: 100%;
   }
 
-  .meta-link::hover {
-    cursor: pointer;
+  .meta-link a {
+    text-decoration: none;
+    & > * {
+      color: black;
+    }
   }
 
   @media (min-width: 35em) {
     .numbered-title {
       justify-self: start;
       margin-top: 2rem;
+    }
+
+    .image-link img {
+      max-width: 80%;
     }
 
     .destination-meta {
@@ -70,7 +83,12 @@ export const GridContainerPortfolio = styled(GridContainer)`
       ". image tabs ."
       ". image content .";
 
-    & > img {
+    .image-link {
+      justify-content: start;
+      align-items: start;
+    }
+
+    .image-link img {
       max-width: 90%;
     }
 
