@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import AppContext from "../Context/AppContext";
-import hevedResume from "../Assets/About/resume-heved.pdf";
+import hevedResume from "../Assets/About/resume-hevedrios.pdf";
 import bcsPdf from "../Assets/About/bcs-certificate.pdf";
 import profilePhoto from "../Assets/About/heved-section.png";
 import degree from "../Assets/About/bcs-cert.png";
