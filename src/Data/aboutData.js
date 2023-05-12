@@ -5,7 +5,7 @@ const data1 = [
         subtitle: "BCS.",
         linkName: "Resume",
         description:
-            "A front-end developer with 3 years of experience. I am passionate about learning and implementing modern coding and front-end techniques to get the best of my web projects. If you want to know more about me here is my resume.",
+            "A front-end developer with 3 years of experience. I am passionate about learning and implementing modern coding and front-end techniques to get the best of my projects. If you want to know more about me here is my resume.",
         isCurrent: true,
     },
     {
@@ -14,7 +14,7 @@ const data1 = [
         subtitle: "Engineer in",
         linkName: "Certificate",
         description:
-            "I hold a degree in Computer Systems Engineering by UTEL, where aquired my technical and software development skills. In addition, I also have a degree in Public Administration, which has allowed me to develop strong soft skills.",
+            "I hold a degree in Computer Systems Engineering from UTEL, where I acquired my technical and software development skills. Furthermore, I also have a degree in Public Administration, where I developed Englsih proficiency.",
         isCurrent: false,
     },
     {
@@ -23,7 +23,7 @@ const data1 = [
         subtitle: "Scrimba",
         linkName: "Certificate",
         description:
-            "I discovered that front-end development combines two of my greatest interests to work in: logical-mathematical thinking and visually appealing designs, being so I decided to go ahead to the next level with the Scrimba's certification.",
+            "I discovered that front-end development combines two of my greatest interests: logical-mathematical thinking and visually appealing designs. As a result, I decided to take my skills to the next level by earning Scrimba's certification.",
         isCurrent: false,
     },
     {
@@ -32,7 +32,7 @@ const data1 = [
         subtitle: "EF SET",
         linkName: "Certificate",
         description:
-            "My native language is spanish since I was born in Mexico, however, to learn proper english has always been an interest to me to take advantage of all the benefits that this entails, but also to effectively communicate with more people.",
+            "My native language is Spanish, however, I have always been interested in learning proper English to take advantage of all the benefits it offers and to effectively communicate with a wider range of people.",
         isCurrent: false,
     },
 ];
