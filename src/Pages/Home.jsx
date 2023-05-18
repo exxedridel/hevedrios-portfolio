@@ -25,7 +25,7 @@ const Home = () => {
             <span className="d-block fs-900 ff-serif text-white">Heved</span>
           </h1>
           <p>
-            As an agile developer with expertise in React libraries, I am capable of developing the user interface of any web project, quickly and efficiently. Additionally, I am passionate about creating visual appealing designs that enhace the overall user experience. Please take a look at my current work!
+            As an agile developer with expertise in React frameworks, I am capable of developing the user interface of any web project, quickly and efficiently. Additionally, I am passionate about creating visual appealing designs that enhance the overall user experience. Please take a look at my current work!
           </p>
         </div>
         <ButtonLarge>

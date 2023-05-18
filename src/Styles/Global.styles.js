@@ -3,6 +3,7 @@ import bgHomeMobile from "../Assets/Home/background-keys-mobile.jpg";
 import bgHomeTablet from "../Assets/Home/background-keys-tablet-auto-0brigthness-dramatic.jpg";
 import bgHomeDesktop from "../Assets/Home/background-keys-desktop-auto-0brigthness-dramatic.jpg";
 import bgOtherMobile from "../Assets/Shared/background-portfolio.jpg";
+import bgOtherDesktop from "../Assets/Shared/background-portfolio-desktop.jpg";
 
 export const BodyContainer = styled.div`
   min-height: 100vh;
@@ -187,8 +188,8 @@ select {
   .bgImageOther {
     background-size: 1900px;
     background-repeat: no-repeat;
-    background-position-y: 275%;
-    background-image: url(${bgOtherMobile});
+    // background-position-y: 275%;
+    background-image: url(${bgOtherDesktop});
   }
 }
 
