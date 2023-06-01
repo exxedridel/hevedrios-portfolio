@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import AppContext from "../Context/AppContext";
-import hevedResume from "../Assets/About/resume-hevedrios.pdf";
+import hevedResume from "../Assets/About/Resume-HevedRios-JS.pdf";
 import bcsPdf from "../Assets/About/bcs-certificate.pdf";
 import profilePhoto from "../Assets/About/heved-section.png";
 import degree from "../Assets/About/bcs-cert.png";
@@ -102,7 +102,7 @@ const About = () => {
         </article>
 
         <a className="img-link" href={getPdfUrl(tabsData[currentTab].id)}>
-          <img src={getImageUrl(tabsData[currentTab].id)} alt="Heved in motorcycle" />
+          <img src={getImageUrl(tabsData[currentTab].id)} alt="Current tab" />
         </a>
       </GridContainerAbout>
     </>
